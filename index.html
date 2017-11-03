@@ -2,11 +2,60 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Gllacy</title>
+    <base href="/assets/basic_intensive/demos/gllacy/">
   </head>
   <body>
+    <div class="site-wrapper">
+      <div class="content-wrapper">
+          <header class="site-header">
+            <h1 class="visually-hidden">Магазин эксклюзивного мороженого</h1>
+            <nav class="site-nav">
+              <a class="site-header__site-logo">
+                <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+              </a>
+              <ul class="navigation">
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О компании</a></li>
+              </ul>
+              <ul class="navigation navigation--user-navigation">
+                <li class="navigation__item navigation__item--search">Поиск</li>
+                <li class="navigation__item navigation__item--enter">Вход</li>
+                <li class="navigation__item navigation__item--basket">Корзина</li>
+              </ul>
+            </nav>
+            <p class="site-header__schedule">
+            <span>C 10 до 20, ежедневно</span>
+            8 812 450-25-25
+            </p>
+        </header>
+        <section class="slider">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+          <div class="slide" id='slide-1'>
+            <h2 class="slide__title">Крем-брюле и пломбир с малиновым джемом</h2>
+               <a class="btn-slide slide__btn" href="#">Давайте оба!</a>
+          </div>
 
+          <div class="slide" id='slide-2'>
+            <h2 class="slide__title">Шоколадный пломбир и лимонный сорбет</h2>
+               <a class="btn-slide slide__btn" href="#">Давайте оба!</a>
+          </div>
+
+          <div class="slide" id='slide-3'>
+            <h2 class="slide__title">Пломбир с помадкой и клубничный щербет</h2>
+               <a class="btn-slide slide__btn" href="#">Давайте оба!</a>
+          </div>
+
+          <div class="controls-slider slider__controls">
+          <button class="controls-slider__toggle" type="button" id='toggle-1'></button>
+          <button class="controls-slider__toggle slider-controls__toggle--active" type="button" id='toggle-2'></button>
+          <button class="controls-slider__toggle" type="button" id='toggle-3'></button>
+        </div>
+
+        </section>
+
+      </div>
+    </div>
   </body>
 </html>
