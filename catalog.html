@@ -56,7 +56,39 @@
               </div>
             </section>
           </li>
-          <li class="navigation__item navigation__item--basket">2 товара</li>
+          <li class="navigation__item navigation__item--basket">
+
+            <section class="basket">
+              <span class="basket__quantity">2 товара</span>
+              <table class="basket__table">
+                <tbody>
+
+                  <tr class="basket__item">
+                    <td> <button class="basket__del" type="button" value="Удалить товар">Удалить товар</button></td>
+                      <td><img src="http://via.placeholder.com/30x30" alt='test'></td>
+                        <td class="basket__goods-title">Пломбир с апельсиновым джемом</td>
+                          <td class="basket__goods-formula">
+                            <span class="basket__amount">1.5кг</span> x <span class="basket__price">200 руб</span></td>
+                            <td class="basket__price-goods">300 руб</td>
+                  </tr>
+
+
+                  <tr class="basket__item">
+                    <td> <button class="basket__del" type="button" value="Удалить товар">Удалить товар</button></td>
+                      <td><img src="http://via.placeholder.com/30x30" alt='test'></td>
+                        <td class="basket__goods-title">Клубничный пломбир с присыпкой из белого шоколада</td>
+                          <td class="basket__goods-formula">
+                            <span class="basket__amount">1.5кг</span> x <span class="basket__price">300 руб</span></td>
+                            <td class="basket__price-goods">450 руб</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="basket__total-price">Итого: 750 руб.
+              <a class="btn-slide btn-slide--md basket__btn" href="#">Оформить заказ</a>
+              </div>
+            </section>
+          </li>
         </ul>
       </nav>
       <p class="site-header__schedule">
@@ -170,7 +202,7 @@
             </ul>
           </fieldset>
 
-          <button class="btn-submit filter__btn" type="submit">Применить</button>
+          <button class="btn-slide btn-slide--md filter__btn" type="submit">Применить</button>
 
 
         </form>

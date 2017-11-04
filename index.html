@@ -57,7 +57,11 @@
                 </div>
               </section>
             </li>
-            <li class="navigation__item navigation__item--basket">Корзина</li>
+            <li class="navigation__item navigation__item--basket">
+              <section class="basket">
+                <span class="basket__quantity">Пусто</span>
+              </section>
+            </li>
           </ul>
         </nav>
         <p class="site-header__schedule">
@@ -170,10 +174,15 @@
           <div class="feed__subscription">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 
-            <span>Электронная почта</span>
-            <!-- Здесь будет элемент формы. Подпись на рассылку -->
+            <form class="feed__form" action="https://echo.htmlacademy.ru/ " method="get">
 
-            <a class="btn-slide btn-slide--md feed__btn" href="#">Отправить</a>
+              <label class="feed__label " for="feed-mail">Электронная почта</label>
+              <input class="feed__input " type="mail" name="feed-mail" id="feed-mail" placeholder="Электронная почта">
+
+              <button class="btn-slide btn-slide--md feed__btn" type="submit">Отправить</button>
+
+            </form>
+
           </div>
         </section>
       </main>
@@ -246,9 +255,35 @@
       </footer>
 
     </div>
-
-
   </div>
+
+  <section class="popup">
+
+    <form class="popup__form" action="https://echo.htmlacademy.ru/ " method="get">
+
+    <ul class="popup__list">
+
+      <li class="popup__item">
+      <label class="popup__label " for="phone">Как вас зовут ?</label>
+      <input class="popup__input " type="text" name="popup-name" id="popup-name" placeholder="Как вас зовут ?">
+      </li>
+
+      <li class="popup__item">
+      <label class="popup__label " for="popup-mail">Ваша почта для ответа ?</label>
+      <input class="popup__input " type="mail" name="popup-mail" id="popup-mail" placeholder="Ваша почта для ответа ?">
+      </li>
+
+      <li class="popup__item">
+      <label class="popup__label " for="popup-feedback">Напишите что-нибудь ...</label>
+      <textarea class="popup__textarea" name="popup-feedback" id='popup-feedback' placeholder="Напишите что-нибудь ..."></textarea>
+      </li>
+
+      </ul>
+
+      <button class="btn-slide btn-slide--md popup__btn" type="submit">Отправить</button>
+
+    </form>
+  </section>
 </body>
 
 </html>
