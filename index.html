@@ -17,13 +17,46 @@
             <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
           </a>
           <ul class="navigation">
-            <li><a href="#">Каталог</a></li>
+            <li>
+              <a href="#">Каталог</a>
+              <ul class="sub-menu">
+                <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
+                <li><a class="sub-menu__lnk sub-menu__lnk--active" href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
           </ul>
           <ul class="navigation navigation--user-navigation">
             <li class="navigation__item navigation__item--search">Поиск</li>
-            <li class="navigation__item navigation__item--enter">Вход</li>
+            <li class="navigation__item navigation__item--enter">Вход
+
+              <section class="account">
+
+                <form class="account__form" action="https://echo.htmlacademy.ru" method="post">
+                  <input class="account__input" type="email" name="account-email" id="account-email" placeholder="Электронная почта">
+                  <label class="account__label" for='account-email'>электронная почта</label>
+                  <input class="account__input" type="text" name="password" id="account-password" placeholder="Пароль">
+                  <label class="account__label" for='account-password'>пароль</label>
+                  <button class="btn-slide btn-slide--md account__btn" type="submit" value="Войти">Войти</button>
+                </form>
+
+                <div class="account__support">
+                  <ul class="account__list">
+                    <li class="account__item">
+                      <a href="#">Забыли пароль ?</a>
+                    </li>
+
+                    <li class="account__item">
+                      <a href="#">Новая регистрация</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </li>
             <li class="navigation__item navigation__item--basket">Корзина</li>
           </ul>
         </nav>
@@ -78,24 +111,28 @@
             <img src="http://via.placeholder.com/100x100" alt='test'>
             <p class="ice-cream__price">310 руб <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a class="btn-slide btn-slide--md ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream">
             <img src="http://via.placeholder.com/100x100" alt='test'>
             <p class="ice-cream__price">380 руб <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-кофейное с кусочками шоколада</p>
+            <a class="btn-slide btn-slide--md ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream">
             <img src="http://via.placeholder.com/100x100" alt='test'>
             <p class="ice-cream__price">355 руб <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <a class="btn-slide btn-slide--md ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream">
             <img src="http://via.placeholder.com/100x100" alt='test'>
             <p class="ice-cream__price">415 руб <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное крем-брюле с карамельной подливкой</p>
+            <a class="btn-slide btn-slide--md ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
         </section>
