@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gllacy</title>
+  <base href="/assets/basic_intensive/demos/gllacy/">
+</head>
+
+<body>
+
+    <div class="content-wrapper">
+      <header class="site-header">
+        <h1 class="visually-hidden">Магазин эксклюзивного мороженого</h1>
+        <nav class="site-nav">
+          <a class="site-header__site-logo">
+            <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+          </a>
+          <ul class="navigation">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+          <ul class="navigation navigation--user-navigation">
+            <li class="navigation__item navigation__item--search">Поиск</li>
+            <li class="navigation__item navigation__item--enter">Вход</li>
+            <li class="navigation__item navigation__item--basket">2 товара</li>
+          </ul>
+        </nav>
+        <p class="site-header__schedule">
+          <span>C 10 до 20, ежедневно</span> 8 812 450-25-25
+        </p>
+      </header>
+
+      <main class="site-main">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href='index.html'>Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href='#'>Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__current-lnk" href='#'>Сливочное</a>
+            </li>
+          </ul>
+        </div>
+
+        <h2 class="site-main__title">Сливочное мороженое</h2>
+
+        <section class="filter">
+          <h2 class="visually-hidden">Фильтр</h2>
+           <form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
+             <fieldset class="filter__fieldset">
+               <legend class="filter__legend">Сортировка</legend>
+               <select class="filter__select">
+                 <option value="popular">по популярности</option>
+                  <option value="cheap">сначала недорогие</option>
+                  <option value="expensive">сначала дорогие</option>
+                  <option value="fatness">по жирности</option>
+               </select>
+             </fieldset>
+
+             <fieldset class="filter__fieldset">
+               <legend class="filter__legend">Цена: 100 руб. - 500 руб.</legend>
+               <section class="range-filter">
+                 <div class="range-filter__scale">
+                   <div class="range-filter__bar"></div>
+                 </div>
+                 <div class="range-filter__toggle range-filter__toggle--min">min</div>
+                 <div class="range-filter__toggle range-filter__toggle--max">max</div>
+               </section>
+             </filedset>
+           </form>
+        </section>
+
+      </main>
+
+
+      <div class="content-wrapper">
+        <footer class="site-footer">
+          <div class="site-footer__social social">
+            <ul class="social__list">
+
+              <li class="social__item">
+                <a class="social__lnk social__lnk--twiter" href="#">Twiter</a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__lnk social__lnk--instagram" href="#">Instagram</a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__lnk social__lnk--facebook" href="#">Facebook</a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__lnk social__lnk--vk" href="#">VK</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="site-footer__specification specification">
+            <ul class="specification__list">
+
+              <li class="specification__item">
+                <a class="specification__lnk" href="#"> Для поставщиков</a>
+              </li>
+
+              <li class="specification__item">
+                <a class="specification__lnk" href="#"> Наши документы</a>
+              </li>
+
+              <li class="specification__item">
+                <a class="specification__lnk" href="#"> О производстве</a>
+              </li>
+
+              <li class="specification__item">
+                <a class="specification__lnk" href="#"> Экологические стандарты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="site-footer__copyright">
+
+            <a class="site-footer__logo">
+              <img src="http://via.placeholder.com/100x100" alt='logo'>
+            </a>
+
+            <p class="site-footer__descr">Сделано в Html Academy <span>спецсимвол</span> 2016 </p>
+
+          </div>
+        </footer>
+
+      </div>
+
+
+  </body>
+
+  </html>
