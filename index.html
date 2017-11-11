@@ -30,10 +30,20 @@
             <li><a href="#">О компании</a></li>
           </ul>
           <ul class="navigation navigation--user-navigation">
-            <li class="navigation__item navigation__item--search">Поиск</li>
-            <li class="navigation__item navigation__item--enter">Вход
+            <li class="navigation__item navigation__item--search">
+              <a href="#" class="navigation__btn">Поиск</a>
+
+              <form class="navigation__form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="search">Форма поиска</label>
+                <input class="navigation__input" type="search" id="search" placeholder="Что ищем ?">
+              </form>
+            </li>
+
+            <li class="navigation__item navigation__item--enter">
+              <a class="navigation__lnk" href="login.html">Вход</a>
 
               <section class="account">
+                <h2 class="visually-hidden">Вход в аккаунт</h2>
 
                 <form class="account__form" action="https://echo.htmlacademy.ru" method="post">
                   <input class="account__input" type="email" name="account-email" id="account-email" placeholder="Электронная почта">
@@ -56,18 +66,32 @@
                 </div>
               </section>
             </li>
+
             <li class="navigation__item navigation__item--basket">
               <section class="basket">
+                <h2 class="visually-hidden">Корзина</h2>
                 <span class="basket__quantity">Пусто</span>
+                <div class="basket__content basket__content--empty">
+                  <table class="basket__table">
+                    <tbody>
+                    </tbody>
+                  </table>
+
+                  <div class="basket__total-price">
+                    <a class="btn-slide btn-slide--md basket__btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
               </section>
             </li>
           </ul>
         </nav>
+
         <p class="site-header__schedule">
           <span>C 10 до 20, ежедневно</span> 8 812 450-25-25
         </p>
       </header>
       <section class="slider">
+        <h2 class="visually-hidden">Слайдер на главной странице</h2>
 
         <div class="slide" id='slide-1'>
           <h2 class="slide__title">Крем-брюле и пломбир с малиновым джемом</h2>
@@ -93,15 +117,19 @@
       </section>
 
       <main class="site-main">
+
         <section class="special-offer">
+          <h2 class="visually-hidden">Специальное предложение</h2>
 
           <article class="special-offer__choice special-offer__choice--raspberry">
+            <h2 class="visually-hidden">Выгодное предложение пр покупке фруктового мороженого</h2>
             <h3 class="special-offer__title">Малинка даром !</h3>
             <p class="special-offer__descr">При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно</p>
             <a class="btn-slide btn-slide--md special-offer__btn" href="#">Хочу варенье!</a>
           </article>
 
           <article class="special-offer__choice special-offer__choice--chocolate">
+            <h2 class="visually-hidden">Выгодное предложение пр покупке пломбира</h2>
             <h3 class="special-offer__title">Малинка даром !</h3>
             <p class="special-offer__descr">При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
             <a class="btn-slide btn-slide--md special-offer__btn" href="#">Шоколадки даром!</a>
@@ -109,8 +137,10 @@
         </section>
 
         <section class="goods">
+          <h2 class="visually-hidden">Каталог товаров</h2>
 
           <article class="ice-cream">
+            <h2 class="visually-hidden">Товар: cливочное с апельсиновым джемом и цитрусовой стружкой</h2>
             <img src="img/product_1.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">310 руб <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -118,6 +148,7 @@
           </article>
 
           <article class="ice-cream">
+            <h2 class="visually-hidden">Товар: cливочное с апельсиновым джемом и цитрусовой стружкой</h2>
             <img src="img/product_2.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">380 руб <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-кофейное с кусочками шоколада</p>
@@ -125,6 +156,7 @@
           </article>
 
           <article class="ice-cream">
+            <h2 class="visually-hidden">Товар: cливочно-клубничное с присыпкой из белого шоколада</h2>
             <img src="img/product_3.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">355 руб <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -132,6 +164,7 @@
           </article>
 
           <article class="ice-cream">
+            <h2 class="visually-hidden">Товар: cливочное крем-брюле с карамельной подливкой</h2>
             <img src="img/product_4.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">415 руб <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное крем-брюле с карамельной подливкой</p>
@@ -166,6 +199,8 @@
         <section class="feed">
           <h2 class="visually-hidden">Лента новостей</h2>
           <article class="feed__news">
+            <h2 class="visually-hidden">Новое в нашем блоге</h2>
+
             <p class="feed__new">Новое в нашем блоге</p>
             <p class="feed__descr">10 способов сервировки фруктовых щербетов к столу</p>
           </article>
@@ -176,7 +211,7 @@
             <form class="feed__form" action="https://echo.htmlacademy.ru/ " method="get">
 
               <label class="feed__label " for="feed-mail">Электронная почта</label>
-              <input class="feed__input " type="mail" name="feed-mail" id="feed-mail" placeholder="Электронная почта">
+              <input class="feed__input " type="email" name="feed-mail" id="feed-mail" placeholder="Электронная почта">
 
               <button class="btn-slide btn-slide--md feed__btn" type="submit">Отправить</button>
 
@@ -187,8 +222,10 @@
       </main>
     </div>
     <section class="contacts">
-      <!--место для карты-->
-      <img src="http://via.placeholder.com/300x300" alt='map'>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
       <p class="contacts__descr">
         <span>Адрес главного офиса и офлайн магазина:</span> ул.Большая Конюшенная 19/8, Санкт-Петербург
         <span>Для заказов по телефону</span> 8 812 450-25-25
@@ -245,7 +282,7 @@
         <div class="site-footer__copyright">
 
           <a class="site-footer__logo">
-            <img src="http://via.placeholder.com/100x100" alt='logo'>
+            <img src="img/html-academy.svg" width='477' height='165' alt='htmlacademy-logo'>
           </a>
 
           <p class="site-footer__descr">Сделано в Html Academy <span>спецсимвол</span> 2016 </p>
@@ -257,19 +294,20 @@
   </div>
 
   <section class="popup">
+    <h2 class="visually-hidden">Заполните форму для обратной связи</h2>
 
     <form class="popup__form" action="https://echo.htmlacademy.ru/ " method="get">
 
       <ul class="popup__list">
 
         <li class="popup__item">
-          <label class="popup__label " for="phone">Как вас зовут ?</label>
+          <label class="popup__label " for="popup-name">Как вас зовут ?</label>
           <input class="popup__input " type="text" name="popup-name" id="popup-name" placeholder="Как вас зовут ?">
         </li>
 
         <li class="popup__item">
           <label class="popup__label " for="popup-mail">Ваша почта для ответа ?</label>
-          <input class="popup__input " type="mail" name="popup-mail" id="popup-mail" placeholder="Ваша почта для ответа ?">
+          <input class="popup__input " type="email" name="popup-mail" id="popup-mail" placeholder="Ваша почта для ответа ?">
         </li>
 
         <li class="popup__item">

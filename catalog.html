@@ -12,7 +12,7 @@
     <header class="site-header">
       <h1 class="visually-hidden">Магазин эксклюзивного мороженого</h1>
       <nav class="site-nav">
-        <a class="site-header__site-logo">
+        <a class="site-header__site-logo" href="index.html">
           <img src="img/logo.svg" width="100" height="100" alt="Глейси">
         </a>
         <ul class="navigation">
@@ -30,8 +30,18 @@
         </ul>
         <ul class="navigation navigation--user-navigation">
 
-          <li class="navigation__item navigation__item--search">Поиск</li>
-          <li class="navigation__item navigation__item--enter">Вход
+          <li class="navigation__item navigation__item--search">
+          <a href="#" class="navigation__btn">Поиск</a>
+
+          <form class="navigation__form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="search">Форма поиска</label>
+            <input class="navigation__input" type="search" id="search" placeholder="Что ищем ?">
+          </form>
+          </li>
+
+          <li class="navigation__item navigation__item--enter">
+            <a class="navigation__lnk" href="login.html">Вход</a>
+
             <section class="account">
 
               <form class="account__form" action="https://echo.htmlacademy.ru" method="post">
@@ -59,12 +69,17 @@
 
             <section class="basket">
               <span class="basket__quantity">2 товара</span>
+              <div class="basket__content basket__content--empty">
               <table class="basket__table">
                 <tbody>
 
                   <tr class="basket__item">
                     <td> <button class="basket__del" type="button" value="Удалить товар">Удалить товар</button></td>
-                    <td><img src="http://via.placeholder.com/30x30" alt='test'></td>
+                    <td>
+                      <a href="#">
+                        <img src="img/product_1.jpg" width="30" height="30" alt='test'>
+                      </a>
+                    </td>
                     <td class="basket__goods-title">Пломбир с апельсиновым джемом</td>
                     <td class="basket__goods-formula">
                       <span class="basket__amount">1.5кг</span> x <span class="basket__price">200 руб</span></td>
@@ -74,7 +89,11 @@
 
                   <tr class="basket__item">
                     <td> <button class="basket__del" type="button" value="Удалить товар">Удалить товар</button></td>
-                    <td><img src="http://via.placeholder.com/30x30" alt='test'></td>
+                    <td>
+                      <a href="#">
+                      <img src="img/product_3.jpg" width="30" height="30" alt='test'>
+                      </a>
+                    </td>
                     <td class="basket__goods-title">Клубничный пломбир с присыпкой из белого шоколада</td>
                     <td class="basket__goods-formula">
                       <span class="basket__amount">1.5кг</span> x <span class="basket__price">300 руб</span></td>
@@ -86,6 +105,7 @@
               <div class="basket__total-price">Итого: 750 руб.
                 <a class="btn-slide btn-slide--md basket__btn" href="#">Оформить заказ</a>
               </div>
+            </div>
             </section>
           </li>
         </ul>
@@ -377,7 +397,7 @@
       <div class="site-footer__copyright">
 
         <a class="site-footer__logo">
-          <img src="http://via.placeholder.com/100x100" alt='logo'>
+          <img src="img/html-academy.svg" width='477' heigth='165' alt='htmlacademy-logo'>
         </a>
 
         <p class="site-footer__descr">Сделано в Html Academy <span>спецсимвол</span> 2016 </p>
