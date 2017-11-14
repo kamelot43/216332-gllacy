@@ -51,6 +51,8 @@ a {
 .disable {
   display: none;
 }
+
+/*ШАПКА САЙТА*/
 .site-nav {
   font-size: 16px;
   line-height: 22px;
@@ -118,3 +120,74 @@ a {
   line-height: 24px;
   font-weight: 700;
 }
+
+/*ОСНОВНОЙ КОНТЕНТ : ЭЛЕМЕНТЫ СЛАЙДЕРА*/
+
+.slide__title {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  line-height: 61px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn-slide {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.btn-slide--md {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*ОСНОВНОЙ КОНТЕНТ : БЛОК СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ*/
+
+.special-offer__title {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.special-offer__descr {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+/*ОСНОВНОЙ КОНТЕНТ : БЛОК МОРОЖЕНОЕ*/
+ .ice-cream__price {
+   font-size: 30px;
+   line-height: 30px;
+   font-weight: 700;
+ }
+
+ /*ОСНОВНОЙ КОНТЕНТ : БЛОК ПРЕИМУЩЕСТВА*/
+
+ .advantages {
+  background-color: #ebdec0;
+  background-image: url("../img/layer_1.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+  color: #323232;
+ }
+
+ .advantages__lead {
+   margin: 0;
+   padding: 0;
+   font-size: 24px;
+   line-height: 30px;
+   font-weight: 500;
+ }
+
+ .advantages__list {
+   list-style: none;
+ }
