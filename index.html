@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Gllacy</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
           </a>
           <ul class="navigation">
             <li>
-              <a href="#">Каталог</a>
+              <a class="navigation__lnk" href="#">Каталог</a>
               <ul class="sub-menu">
                 <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
                 <li><a class="sub-menu__lnk sub-menu__lnk--active" href="catalog.html">Сливочное</a></li>
@@ -26,23 +28,23 @@
                 <li><a href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О компании</a></li>
+            <li><a class="navigation__lnk"  href="#">Доставка и оплата</a></li>
+            <li><a class="navigation__lnk"  href="#">О компании</a></li>
           </ul>
           <ul class="navigation navigation--user-navigation">
             <li class="navigation__item navigation__item--search">
-              <a href="#" class="navigation__btn">Поиск</a>
+              <a href="#" class="navigation__lnk navigation__lnk--search">Поиск</a>
 
-              <form class="navigation__form" action="https://echo.htmlacademy.ru" method="post">
+              <form class="navigation__form disable" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="search">Форма поиска</label>
                 <input class="navigation__input" type="search" id="search" placeholder="Что ищем ?">
               </form>
             </li>
 
             <li class="navigation__item navigation__item--enter">
-              <a class="navigation__lnk" href="login.html">Вход</a>
+              <a class="navigation__lnk navigation__lnk--user" href="login.html">Вход</a>
 
-              <section class="account">
+              <section class="account disable">
                 <h2 class="visually-hidden">Вход в аккаунт</h2>
 
                 <form class="account__form" action="https://echo.htmlacademy.ru" method="post">
@@ -70,8 +72,10 @@
             <li class="navigation__item navigation__item--basket">
               <section class="basket">
                 <h2 class="visually-hidden">Корзина</h2>
-                <span class="basket__quantity">Пусто</span>
-                <div class="basket__content basket__content--empty">
+                <a class="basket__lnk navigation__lnk--user" href="#">
+                  <span class="basket__quantity">Пусто</span>
+                </a>
+                <div class="basket__content basket__content--empty disable">
                   <table class="basket__table">
                     <tbody>
                     </tbody>
@@ -87,7 +91,7 @@
         </nav>
 
         <p class="site-header__schedule">
-          <span>C 10 до 20, ежедневно</span> 8 812 450-25-25
+          C 10 до 20, ежедневно<span> 8 812 450-25-25</span>
         </p>
       </header>
       <section class="slider">
