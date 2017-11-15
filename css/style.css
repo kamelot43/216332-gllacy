@@ -39,7 +39,6 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
-  background-color: #849d8f;
   color: #ffffff;
 }
 
@@ -53,6 +52,10 @@ a {
 }
 
 /*ШАПКА САЙТА*/
+
+.site-wrapper {
+  background-color: #849d8f;
+}
 .site-nav {
   font-size: 16px;
   line-height: 22px;
@@ -149,6 +152,34 @@ a {
   text-align: center;
   vertical-align: middle;
 }
+
+/*ОСНОВНОЙ КОНТЕНТ : БЛОК КОРЗИНА*/
+
+.basket {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+.basket__content {
+  background-color: #ffffff;
+}
+
+.basket__price {
+  opacity: 0.6;
+}
+
+.basket__del {
+  border: 0;
+  font-size: 0;
+}
+
+.basket__total-price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
 
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ*/
 
