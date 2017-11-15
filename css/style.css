@@ -68,6 +68,23 @@ a {
   color: #ffffff;
 }
 
+.account__btn {
+  border: 0;
+  background-color: transparent;
+}
+
+.account__list {
+  list-style: none;
+}
+
+.account__lnk {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+  text-decoration: underline;
+}
+
 .sub-menu {
   font-size: 14px;
   line-height: 16px;
@@ -133,18 +150,6 @@ a {
   vertical-align: middle;
 }
 
-.btn-slide {
-  font-size: 32px;
-  line-height: 44px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.btn-slide--md {
-  font-size: 18px;
-  line-height: 24px;
-}
-
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ*/
 
 .special-offer__title {
@@ -191,3 +196,126 @@ a {
  .advantages__list {
    list-style: none;
  }
+
+ /*ОСНОВНОЙ КОНТЕНТ : БЛОК ЛЕНТА НОВОСТЕЙ*/
+
+ .feed {
+   color: #323232;
+   background-color: #ffffff;
+ }
+
+ .feed__new {
+   margin: 0;
+   padding: 0;
+ }
+
+ .feed__descr {
+   margin: 0;
+   padding: 0;
+   font-size: 24px;
+   line-height: 30px;
+   font-weight: 700;
+   text-decoration: underline;
+ }
+
+ .subscription {
+   color: #323232;
+   background-color: #ffffff;
+ }
+
+ .subscription__input {
+   font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #d3d3d2;
+ }
+
+ .subscription__input:hover {
+  border: 2px solid #c7c6c5;
+ }
+
+ .subscription__input:active,
+ .subscription__input:focus  {
+    outline: none;
+    border: 2px solid #8fbdec;
+  }
+
+  .subscription__btn {
+    border: 0;
+    background-color: transparent;
+
+  }
+
+  /*ОСНОВНОЙ КОНТЕНТ : БЛОК КОНТАКТНЫЙ АДРЕСС*/
+
+  .contacts__inner {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #323232;
+  }
+
+  .contacts__descr {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__descr span {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  /*ПОДВАЛ САЙТА*/
+  .site-footer {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .site-footer__descr a {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+
+  .social__list,
+  .specification__list {
+    list-style: none;
+  }
+
+  .social__lnk {
+    font-size: 0;
+  }
+
+  .specification__lnk {
+    color: #ffffff;
+  }
+
+  .specification__lnk--bold {
+    font-weight: 700;
+  }
+
+  /* POPUP */
+
+  .popup__list {
+    list-style: none;
+  }
+
+  .popup__btn {
+    border: 0;
+    background-color: transparent;
+  }
+
+  /*ВСПОМОГАТЕЛЬНЫЙ ЭЛЕМЕНТ */
+  .btn-slide {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .btn-slide--lg {
+    font-size: 32px;
+    line-height: 44px;
+  }
