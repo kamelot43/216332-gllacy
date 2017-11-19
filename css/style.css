@@ -53,6 +53,32 @@ a {
 
 /*ШАПКА САЙТА*/
 
+.site-header {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 330px;
+  outline: 2px solid blue;
+}
+
+.site-header__schedule {
+  width: 167px;
+
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.site-header__schedule span {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
 .site-wrapper {
   background-color: #849d8f;
 }
@@ -60,6 +86,11 @@ a {
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
+}
+
+.site-nav__wrapper {
+  display: flex;
+  outline: 2px solid red;
 }
 
 .navigation,
@@ -119,29 +150,45 @@ a {
   background-color: #f6b5a5;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  width: 410px;
+  height: 85px;
+  outline: 2px solid green;
+}
+
+.navigation--user-navigation {
+  width: 270px;
+  margin-left: auto;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation__lnk {
+  display: block;
+}
+
 .navigation__lnk--user {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
 }
 
-.navigation__lnk--search {
-  font-size: 0;
-}
 
-.site-header__schedule {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 700;
-}
-
-.site-header__schedule span {
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: 700;
-}
 
 /*ОСНОВНОЙ КОНТЕНТ : ЭЛЕМЕНТЫ СЛАЙДЕРА*/
+
+.slider {
+  margin-bottom: 40px;
+  outline: 2px solid pink;
+}
 
 .slide__title {
   margin: 0;
@@ -240,9 +287,29 @@ a {
 
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ*/
 
+.special-offer {
+  display: flex;
+  justify-content: space-between;
+
+   margin-bottom: 40px;
+
+  outline: 2px solid orange;
+}
+
+.special-offer__choice {
+  height: 230px;
+  width: 560px;
+
+  padding: 20px;
+  padding-top: 25px;
+  outline: 2px solid blue;
+
+}
+
 .special-offer__title {
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
@@ -256,11 +323,34 @@ a {
   font-weight: 700;
 }
 
+/*ОСНОВНОЙ КОНТЕНТ : БЛОК ТОВАРЫ*/
+
+.goods {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+
+}
+
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК МОРОЖЕНОЕ*/
+
+.ice-cream {
+  width: 270px;
+  outline: 2px solid orange;
+}
+
  .ice-cream__price {
    font-size: 30px;
    line-height: 30px;
    font-weight: 700;
+ }
+
+ .ice-cream__descr {
+   margin: 0;
+   padding: 0;
+   text-decoration: underline;
  }
 
  /*ОСНОВНОЙ КОНТЕНТ : БЛОК ПРЕИМУЩЕСТВА*/
@@ -432,4 +522,9 @@ a {
     line-height: 18px;
     font-weight: 500;
     color: #ffffff;
+  }
+
+  .content-wrapper {
+    width: 1150px;
+    margin: 0 auto;
   }

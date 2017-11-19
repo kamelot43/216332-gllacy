@@ -6,6 +6,12 @@
   <title>Gllacy</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <!--<style>
+  HTML {
+    background: url( 'img/1.jpg' ) 50% 0 no-repeat;
+    opacity: .5;
+  }
+</style>-->
 </head>
 
 <body>
@@ -14,14 +20,16 @@
     <div class="content-wrapper">
       <header class="site-header">
         <h1 class="visually-hidden">Магазин эксклюзивного мороженого</h1>
+
         <nav class="site-nav">
-          <a class="site-header__site-logo">
-            <img src="img/logo.svg" width="100" height="100" alt="Глейси">
-          </a>
+            <div class="site-nav__wrapper">
+              <a class="site-header__site-logo">
+                <img src="img/logo.svg" width="160" height="80" alt="Глейси">
+              </a>
           <ul class="navigation">
             <li>
               <a class="navigation__lnk" href="#">Каталог</a>
-              <ul class="sub-menu">
+              <ul class="sub-menu disable">
                 <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
                 <li><a class="sub-menu__lnk sub-menu__lnk--active" href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
@@ -89,7 +97,9 @@
               </section>
             </li>
           </ul>
+          </div>
         </nav>
+
 
         <p class="site-header__schedule">
           C 10 до 20, ежедневно<span> 8 812 450-25-25</span>
@@ -113,7 +123,7 @@
           <a class="btn-slide btn-slide--lg slide__btn" href="#">Давайте оба !</a>
         </div>
 
-        <div class="controls-slider slider__controls">
+        <div class="controls-slider slider__controls disable">
           <button class="controls-slider__toggle" type="button" id='toggle-1'></button>
           <button class="controls-slider__toggle controls-slider__toggle--active" type="button" id='toggle-2'></button>
           <button class="controls-slider__toggle" type="button" id='toggle-3'></button>
@@ -149,7 +159,7 @@
             <img src="img/product_1.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">310 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream">
@@ -157,7 +167,7 @@
             <img src="img/product_2.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">380 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-кофейное с кусочками шоколада</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream">
@@ -165,7 +175,7 @@
             <img src="img/product_3.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">355 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-клубничное с присыпкой из белого шоколада</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream">
@@ -173,7 +183,7 @@
             <img src="img/product_4.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">415 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное крем-брюле с карамельной подливкой</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
         </section>
