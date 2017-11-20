@@ -11,6 +11,9 @@
     background: url( 'img/1.jpg' ) 50% 0 no-repeat;
     opacity: .5;
   }
+  BODY {
+    opacity: .5;
+  }
 </style>-->
 </head>
 
@@ -139,6 +142,7 @@
           <article class="special-offer__choice special-offer__choice--raspberry">
             <h2 class="visually-hidden">Выгодное предложение пр покупке фруктового мороженого</h2>
             <h3 class="special-offer__title">Малинка даром !</h3>
+
             <p class="special-offer__descr">При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно</p>
             <a class="btn-slide special-offer__btn" href="#">Хочу варенье!</a>
           </article>
@@ -155,6 +159,7 @@
           <h2 class="visually-hidden">Каталог товаров</h2>
 
           <article class="ice-cream">
+
             <h2 class="visually-hidden">Товар: cливочное с апельсиновым джемом и цитрусовой стружкой</h2>
             <img src="img/product_1.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">310 &#8381; <span>кг</span> </p>
@@ -165,8 +170,10 @@
           <article class="ice-cream">
             <h2 class="visually-hidden">Товар: cливочное с апельсиновым джемом и цитрусовой стружкой</h2>
             <img src="img/product_2.jpg" width="267" height="267" alt="Пломбир">
+            <div class="ice-cream__container">
             <p class="ice-cream__price">380 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-кофейное с кусочками шоколада</p>
+          </div>
             <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
@@ -211,6 +218,8 @@
           </ul>
         </section>
 
+        <div class="content-container">
+
         <section class="feed">
           <h2 class="visually-hidden">Лента новостей</h2>
           <article class="feed__news">
@@ -235,17 +244,27 @@
 
 
         </section>
+      </div>
       </main>
     </div>
     <section class="contacts">
       <h2 class="visually-hidden">Как до нас добраться</h2>
+        <div class="content-wrapper">
       <div class="contacts__inner">
+
         <p class="contacts__descr">
-          Адрес главного офиса и офлайн магазина:<span> ул.Большая Конюшенная 19/8, Санкт-Петербург</span> Для заказов по телефону<span> 8 812 450-25-25 </span>
+          Адрес главного офиса и офлайн магазина:<br>
+          <span> ул.Большая Конюшенная 19/8, Санкт-Петербург</span>
+        </p>
+
+        <p class="contacts__descr">
+           Для заказов по телефону <br>
+           <span> 8 812 450-25-25 </span>
         </p>
 
         <a class="btn-slide contacts__btn" href="#">Форма обратной связи</a>
       </div>
+    </div>
     </section>
 
     <div class="content-wrapper">
@@ -299,7 +318,7 @@
             <img src="img/html-academy.svg" width='130' height='40' alt='htmlacademy-logo'>
           </a>
 
-          <p class="site-footer__descr">Сделано в <a href="https://htmlacademy.ru/">Html Academy</a> <span>спецсимвол</span> 2016 </p>
+          <p class="site-footer__descr">Сделано в <a href="https://htmlacademy.ru/">Html Academy</a>  &#169;  2016 </p>
 
         </div>
       </footer>

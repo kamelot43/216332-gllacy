@@ -57,7 +57,7 @@ a {
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 330px;
+  margin-bottom: 270px;
   outline: 2px solid blue;
 }
 
@@ -102,6 +102,12 @@ a {
   color: #ffffff;
 }
 
+.account {
+  position: absolute;
+  left: -70px;
+  top: 70px;
+}
+
 .account__btn {
   border: 0;
   background-color: transparent;
@@ -119,39 +125,11 @@ a {
   text-decoration: underline;
 }
 
-.sub-menu {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  background-color: #f8f7f4;
-  color: black;
-}
 
-.sub-menu a {
-  color: black;
-}
-
-/*находимся на странице*/
-.sub-menu__lnk--active {
-  background-color: #d07058;
-}
-
-.sub-menu__lnk--highlight {
-  font-weight: 700;
-}
-
-.sub-menu a:hover,
-.sub-menu a:focus {
-  outline: 0;
-  background-color: #fbded7;
-}
-
-.sub-menu a:active {
-  background-color: #f6b5a5;
-}
 
 .navigation {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   margin: 0;
@@ -181,6 +159,48 @@ a {
   color: #ffffff;
 }
 
+.sub-menu {
+  position: absolute;
+  top: 65px;
+
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: #f8f7f4;
+  color: black;
+}
+
+.sub-menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+}
+
+.sub-menu li {
+  display: block;
+}
+
+/*находимся на странице*/
+.sub-menu__lnk--active {
+  background-color: #d07058;
+}
+
+.sub-menu__lnk--highlight {
+  font-weight: 700;
+}
+
+.sub-menu a:hover,
+.sub-menu a:focus {
+  outline: 0;
+  background-color: #fbded7;
+}
+
+.sub-menu a:active {
+  background-color: #f6b5a5;
+}
+
 
 
 /*ОСНОВНОЙ КОНТЕНТ : ЭЛЕМЕНТЫ СЛАЙДЕРА*/
@@ -191,8 +211,13 @@ a {
 }
 
 .slide__title {
-  margin: 0;
+  width: 670px;
+
+  margin: 0 auto;
+  margin-bottom: 50px;
   padding: 0;
+
+
   font-size: 60px;
   line-height: 61px;
   font-weight: 700;
@@ -300,6 +325,7 @@ a {
   height: 230px;
   width: 560px;
 
+  box-sizing: border-box;
   padding: 20px;
   padding-top: 25px;
   outline: 2px solid blue;
@@ -337,11 +363,15 @@ a {
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК МОРОЖЕНОЕ*/
 
 .ice-cream {
+  position: relative;
   width: 270px;
   outline: 2px solid orange;
 }
 
  .ice-cream__price {
+   margin: 0;
+   padding: 0;
+
    font-size: 30px;
    line-height: 30px;
    font-weight: 700;
@@ -356,6 +386,9 @@ a {
  /*ОСНОВНОЙ КОНТЕНТ : БЛОК ПРЕИМУЩЕСТВА*/
 
  .advantages {
+  padding-top: 30px;
+  padding: 20px;
+  margin-bottom: 40px;
   background-color: #ebdec0;
   background-image: url("../img/layer_1.png");
   background-position: 0 0;
@@ -366,13 +399,34 @@ a {
  .advantages__lead {
    margin: 0;
    padding: 0;
+   margin-bottom: 15px;
+
    font-size: 24px;
    line-height: 30px;
    font-weight: 500;
  }
 
  .advantages__list {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 0;
+   margin: 0;
    list-style: none;
+ }
+
+ .advantages__descr {
+   padding: 0;
+   margin: 0;
+ }
+
+ .advantages__item {
+   width: 500px;
+
+   margin-bottom: 15px;
+   padding-left: 40px;
+   outline: 2px solid green;
  }
 
  /*ОСНОВНОЙ КОНТЕНТ : ПАГИНАЦИЯ*/
@@ -395,13 +449,29 @@ a {
    list-style: none;
  }
 
+ .content-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+   margin-bottom: 40px;
+ }
+
 
 
  /*ОСНОВНОЙ КОНТЕНТ : БЛОК ЛЕНТА НОВОСТЕЙ*/
 
  .feed {
-   color: #323232;
-   background-color: #ffffff;
+  width: 560px;
+  min-height: 220px;
+
+  padding: 20px;
+  padding-top: 30px;
+  box-sizing: border-box;
+
+  color: #323232;
+  background-color: #ffffff;
+  outline: 2px solid orange;
  }
 
  .feed__new {
@@ -419,8 +489,25 @@ a {
  }
 
  .subscription {
+   width: 560px;
+   min-height: 220px;
+
+   padding: 30px;
+   padding-top: 40px;
+   box-sizing: border-box;
+
    color: #323232;
    background-color: #ffffff;
+   outline: 2px solid orange;
+ }
+
+ .subscription p {
+   margin: 0;
+   padding: 0;
+ }
+
+ .subscription__form {
+   margin-top: 45px;
  }
 
  .subscription__input {
@@ -448,7 +535,26 @@ a {
 
   /*ОСНОВНОЙ КОНТЕНТ : БЛОК КОНТАКТНЫЙ АДРЕСС*/
 
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    min-height: 430px;
+    width: auto;
+    background: thistle;
+  }
+
   .contacts__inner {
+    width: 305px;
+    min-height: 305px;
+
+    margin-left: auto;
+    padding: 20px;
+    padding-top: 25px;
+
+    box-sizing: border-box;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -457,7 +563,9 @@ a {
   }
 
   .contacts__descr {
+    width: 220px;
     margin: 0;
+    margin-bottom: 15px;
     padding: 0;
   }
 
@@ -469,9 +577,24 @@ a {
 
   /*ПОДВАЛ САЙТА*/
   .site-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 105px;
+
+
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
+
+    outline: 2px solid blue;
+  }
+
+  .site-footer__descr {
+    margin: 0;
+    padding: 0;
   }
 
   .site-footer__descr a {
@@ -479,13 +602,42 @@ a {
     color: #ffffff;
   }
 
+
+  .social__item {
+    display: inline-block;
+  }
+
+  .social__lnk {
+    display: block;
+    width: 40px;
+    height: 40px;
+    outline: 2px solid green;
+
+    font-size: 0;
+  }
+
   .social__list,
   .specification__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .specification__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 350px;
+    padding-left: 30px;
+
+    outline: 2px solid orange;
   }
 
 
   .specification__lnk {
+    display: block;
+    width: 170px;
     color: #ffffff;
   }
 
