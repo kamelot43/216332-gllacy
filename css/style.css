@@ -61,6 +61,10 @@ a {
   outline: 2px solid blue;
 }
 
+.site-header--inner {
+  margin-bottom: 30px;
+}
+
 .site-header__schedule {
   width: 167px;
 
@@ -227,6 +231,7 @@ a {
 
 .site-main__title {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   font-size: 35px;
   line-height: 41px;
@@ -236,13 +241,41 @@ a {
 /*ОСНОВНОЙ КОНТЕНТ : ФИЛЬТРЫ*/
 
 .filter {
+  width: 855px;
+
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
 }
 
+
+.filter__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .filter__fieldset {
   border: none;
+  margin-bottom: 20px;
+  padding: 0;
+
+  min-height: 55px; /*временно*/
+  outline: 2px solid green;
+}
+
+.filter__fieldset--sort {
+ width: 195px;
+}
+
+.filter__fieldset--price {
+  width: 220px;
+}
+
+.filter__fieldset--fatness {
+  width: 410px;
 }
 
 .filter__legend {
@@ -257,6 +290,10 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.filter__item {
+  display: inline-block;
 }
 
 .filter__btn {
@@ -300,6 +337,7 @@ a {
 }
 
 .breadcrumbs a {
+  display: block;
   color: inherit;
 }
 
@@ -307,6 +345,10 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
 }
 
 
@@ -355,9 +397,11 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.goods__item {
   margin-bottom: 40px;
-
 }
 
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК МОРОЖЕНОЕ*/

@@ -12,16 +12,17 @@
   <div class="site-wrapper site-wrapper--inner">
 
     <div class="content-wrapper">
-      <header class="site-header">
-        <h1 class="visually-hidden">Магазин эксклюзивного мороженого</h1>
+      <header class="site-header site-header--inner">
+
         <nav class="site-nav">
-          <a class="site-header__site-logo" href="index.html">
-            <img src="img/logo.svg" width="100" height="100" alt="Глейси">
-          </a>
+            <div class="site-nav__wrapper">
+              <a class="site-header__site-logo">
+                <img src="img/logo.svg" width="160" height="80" alt="Глейси">
+              </a>
           <ul class="navigation">
             <li>
               <a class="navigation__lnk" href="#">Каталог</a>
-              <ul class="sub-menu">
+              <ul class="sub-menu disable">
                 <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
                 <li><a class="sub-menu__lnk sub-menu__lnk--active" href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
@@ -33,7 +34,6 @@
             <li><a class="navigation__lnk" href="#">О компании</a></li>
           </ul>
           <ul class="navigation navigation--user-navigation">
-
             <li class="navigation__item navigation__item--search">
               <a href="#" class="navigation__lnk navigation__lnk--search">Поиск</a>
 
@@ -54,7 +54,7 @@
                   <label class="account__label visually-hidden" for='account-email'>электронная почта</label>
                   <input class="account__input" type="text" name="password" id="account-password" placeholder="Пароль">
                   <label class="account__label visually-hidden" for='account-password'>пароль</label>
-                  <button class="btn-slide btn-slide--md account__btn" type="submit" value="Войти">Войти</button>
+                  <button class="btn-slide account__btn" type="submit" value="Войти">Войти</button>
                 </form>
 
                 <div class="account__support">
@@ -70,14 +70,14 @@
                 </div>
               </section>
             </li>
-            <li class="navigation__item navigation__item--basket">
 
+            <li class="navigation__item navigation__item--basket">
               <section class="basket">
                 <h2 class="visually-hidden">Корзина</h2>
                 <a class="basket__lnk navigation__lnk navigation__lnk--user" href="#">
                   <span class="basket__quantity">2 товара</span>
                 </a>
-                <div class="basket__content basket__content--empty">
+                <div class="basket__content basket__content--empty disable">
                   <table class="basket__table">
                     <tbody>
 
@@ -117,9 +117,12 @@
               </section>
             </li>
           </ul>
+          </div>
         </nav>
+
+
         <p class="site-header__schedule">
-          <span>C 10 до 20, ежедневно</span> 8 812 450-25-25
+          C 10 до 20, ежедневно<span> 8 812 450-25-25</span>
         </p>
       </header>
 
@@ -138,12 +141,12 @@
           </ul>
         </div>
 
-        <h2 class="site-main__title">Сливочное мороженое</h2>
+        <h1 class="site-main__title">Сливочное мороженое</h1>
 
         <section class="filter">
           <h2 class="visually-hidden">Фильтр</h2>
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="filter__fieldset">
+            <fieldset class="filter__fieldset filter__fieldset--sort">
               <legend class="filter__legend">Сортировка :</legend>
               <select class="filter__select">
                  <option value="popular">по популярности</option>
@@ -153,7 +156,7 @@
                </select>
             </fieldset>
 
-            <fieldset class="filter__fieldset">
+            <fieldset class="filter__fieldset filter__fieldset--price">
               <legend class="filter__legend">Цена: 100 руб. - 500 руб.</legend>
               <section class="range-filter">
                 <h2 class="visually-hidden">Фильтр по цене</h2>
@@ -165,7 +168,7 @@
               </section>
             </fieldset>
 
-            <fieldset class="filter__fieldset">
+            <fieldset class="filter__fieldset filter__fieldset--fatness">
               <legend class="filter__legend">Жирность :</legend>
 
               <ul class="filter__list">
@@ -234,105 +237,106 @@
 
 
           </form>
+
         </section>
 
         <section class="goods">
           <h2 class="visually-hidden">Ассортимент мороженого</h2>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочное с апельсиновым джемом и цитрусовой стружкой </h2>
             <img src="img/product_1.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">310 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочно-кофейное с кусочками шоколада</h2>
             <img src="img/product_2.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">380 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-кофейное с кусочками шоколада</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочно-клубничное с присыпкой из белого шоколада</h2>
             <img src="img/product_3.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">355 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-клубничное с присыпкой из белого шоколада</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочное крем-брюле с карамельной подливкой</h2>
             <img src="img/product_4.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">415 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное крем-брюле с карамельной подливкой</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочное с брисничным джемом</h2>
             <img src="img/product_5.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">325 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное с брисничным джемом</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочно-черничное с цельными ягодами черники</h2>
             <img src="img/product_6.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">410 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-черничное с цельными ягодами черники</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочно-лимонное с карамельной присыпкой</h2>
             <img src="img/product_7.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">375 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-лимонное с карамельной присыпкой</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочное с шоколадной стружкой</h2>
             <img src="img/product_8.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">320 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное с шоколадной стружкой</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочно-ванильное с кусочками шоколада</h2>
             <img src="img/product_9.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">440 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочно-ванильное с кусочками шоколада</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочное с ментоловым сиропом</h2>
             <img src="img/product_10.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">435 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное с ментоловым сиропом</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочное с кусочками черного шоколада</h2>
             <img src="img/product_11.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">355 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное с кусочками черного шоколада</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="ice-cream">
+          <article class="ice-cream goods__item">
             <h2 class="visually-hidden">Товар:cливочное с мятным сиропом</h2>
             <img src="img/product_12.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">420 &#8381; <span>кг</span> </p>
             <p class="ice-cream__descr">Сливочное с мятным сиропом</p>
-            <a class="btn-slide ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
 
