@@ -6,6 +6,15 @@
   <title>Gllacy каталог</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <!--<style>
+  HTML {
+    background: url( 'img/2.jpg' ) 50% 0 no-repeat;
+    opacity: .5;
+  }
+  BODY {
+    opacity: .5;
+  }
+</style>-->
 </head>
 
 <body>
@@ -15,108 +24,108 @@
       <header class="site-header site-header--inner">
 
         <nav class="site-nav">
-            <div class="site-nav__wrapper">
-              <a class="site-header__site-logo">
-                <img src="img/logo.svg" width="160" height="80" alt="Глейси">
-              </a>
-          <ul class="navigation">
-            <li>
-              <a class="navigation__lnk" href="#">Каталог</a>
-              <ul class="sub-menu disable">
-                <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
-                <li><a class="sub-menu__lnk sub-menu__lnk--active" href="catalog.html">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
-              </ul>
-            </li>
-            <li><a class="navigation__lnk" href="#">Доставка и оплата</a></li>
-            <li><a class="navigation__lnk" href="#">О компании</a></li>
-          </ul>
-          <ul class="navigation navigation--user-navigation">
-            <li class="navigation__item navigation__item--search">
-              <a href="#" class="navigation__lnk navigation__lnk--search">Поиск</a>
+          <div class="site-nav__wrapper">
+            <a class="site-header__site-logo" href="index.html">
+              <img src="img/logo.svg" width="160" height="80" alt="Глейси">
+            </a>
+            <ul class="navigation">
+              <li>
+                <a class="navigation__lnk" href="#">Каталог</a>
+                <ul class="sub-menu disable">
+                  <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
+                  <li><a class="sub-menu__lnk sub-menu__lnk--active" href="catalog.html">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
+              </li>
+              <li><a class="navigation__lnk" href="#">Доставка и оплата</a></li>
+              <li><a class="navigation__lnk" href="#">О компании</a></li>
+            </ul>
+            <ul class="navigation navigation--user-navigation">
+              <li class="navigation__item navigation__item--search">
+                <a href="#" class="navigation__lnk navigation__lnk--search">Поиск</a>
 
-              <form class="navigation__form disable" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="search">Форма поиска</label>
-                <input class="navigation__input" type="search" id="search" placeholder="Что ищем ?">
-              </form>
-            </li>
-
-            <li class="navigation__item navigation__item--enter">
-              <a class="navigation__lnk navigation__lnk--user" href="login.html">Вход</a>
-
-              <section class="account disable">
-                <h2 class="visually-hidden">Вход в аккаунт</h2>
-
-                <form class="account__form" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="account__input" type="email" name="account-email" id="account-email" placeholder="Электронная почта">
-                  <label class="account__label visually-hidden" for='account-email'>электронная почта</label>
-                  <input class="account__input" type="text" name="password" id="account-password" placeholder="Пароль">
-                  <label class="account__label visually-hidden" for='account-password'>пароль</label>
-                  <button class="btn-slide account__btn" type="submit" value="Войти">Войти</button>
+                <form class="navigation__form disable" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="search">Форма поиска</label>
+                  <input class="navigation__input" type="search" id="search" placeholder="Что ищем ?">
                 </form>
+              </li>
 
-                <div class="account__support">
-                  <ul class="account__list">
-                    <li class="account__item">
-                      <a class="account__lnk" href="#">Забыли пароль ?</a>
-                    </li>
+              <li class="navigation__item navigation__item--enter">
+                <a class="navigation__lnk navigation__lnk--user" href="login.html">Вход</a>
 
-                    <li class="account__item">
-                      <a class="account__lnk" href="#">Новая регистрация</a>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-            </li>
+                <section class="account disable">
+                  <h2 class="visually-hidden">Вход в аккаунт</h2>
 
-            <li class="navigation__item navigation__item--basket">
-              <section class="basket">
-                <h2 class="visually-hidden">Корзина</h2>
-                <a class="basket__lnk navigation__lnk navigation__lnk--user" href="#">
-                  <span class="basket__quantity">2 товара</span>
-                </a>
-                <div class="basket__content basket__content--empty disable">
-                  <table class="basket__table">
-                    <tbody>
+                  <form class="account__form" action="https://echo.htmlacademy.ru" method="post">
+                    <input class="account__input" type="email" name="account-email" id="account-email" placeholder="Электронная почта">
+                    <label class="account__label visually-hidden" for='account-email'>электронная почта</label>
+                    <input class="account__input" type="text" name="password" id="account-password" placeholder="Пароль">
+                    <label class="account__label visually-hidden" for='account-password'>пароль</label>
+                    <button class="btn-slide account__btn" type="submit" value="Войти">Войти</button>
+                  </form>
 
-                      <tr class="basket__item">
-                        <td> <button class="basket__del" type="button" value="Удалить товар">Удалить товар</button></td>
-                        <td>
-                          <a href="#">
-                            <img src="img/product_1.jpg" width="30" height="30" alt='test'>
-                          </a>
-                        </td>
-                        <td class="basket__goods-title">Пломбир с апельсиновым джемом</td>
-                        <td class="basket__goods-formula">
-                          <span class="basket__amount">1.5кг</span> x <span class="basket__price">200 руб</span></td>
-                        <td class="basket__price-goods">300 руб</td>
-                      </tr>
+                  <div class="account__support">
+                    <ul class="account__list">
+                      <li class="account__item">
+                        <a class="account__lnk" href="#">Забыли пароль ?</a>
+                      </li>
 
-
-                      <tr class="basket__item">
-                        <td> <button class="basket__del" type="button" value="Удалить товар">Удалить товар</button></td>
-                        <td>
-                          <a href="#">
-                            <img src="img/product_3.jpg" width="30" height="30" alt='test'>
-                          </a>
-                        </td>
-                        <td class="basket__goods-title">Клубничный пломбир с присыпкой из белого шоколада</td>
-                        <td class="basket__goods-formula">
-                          <span class="basket__amount">1.5кг</span> x <span class="basket__price">300 руб</span></td>
-                        <td class="basket__price-goods">450 руб</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <div class="basket__total-price">Итого: 750 руб.
-                    <a class="btn-slide basket__btn" href="#">Оформить заказ</a>
+                      <li class="account__item">
+                        <a class="account__lnk" href="#">Новая регистрация</a>
+                      </li>
+                    </ul>
                   </div>
-                </div>
-              </section>
-            </li>
-          </ul>
+                </section>
+              </li>
+
+              <li class="navigation__item navigation__item--basket">
+                <section class="basket">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <a class="basket__lnk navigation__lnk navigation__lnk--user" href="#">
+                    <span class="basket__quantity">2 товара</span>
+                  </a>
+                  <div class="basket__content basket__content--empty disable">
+                    <table class="basket__table">
+                      <tbody>
+
+                        <tr class="basket__item">
+                          <td> <button class="basket__del" type="button" value="Удалить товар">Удалить товар</button></td>
+                          <td>
+                            <a href="#">
+                              <img src="img/product_1.jpg" width="30" height="30" alt='test'>
+                            </a>
+                          </td>
+                          <td class="basket__goods-title">Пломбир с апельсиновым джемом</td>
+                          <td class="basket__goods-formula">
+                            <span class="basket__amount">1.5кг</span> x <span class="basket__price">200 руб</span></td>
+                          <td class="basket__price-goods">300 руб</td>
+                        </tr>
+
+
+                        <tr class="basket__item">
+                          <td> <button class="basket__del" type="button" value="Удалить товар">Удалить товар</button></td>
+                          <td>
+                            <a href="#">
+                              <img src="img/product_3.jpg" width="30" height="30" alt='test'>
+                            </a>
+                          </td>
+                          <td class="basket__goods-title">Клубничный пломбир с присыпкой из белого шоколада</td>
+                          <td class="basket__goods-formula">
+                            <span class="basket__amount">1.5кг</span> x <span class="basket__price">300 руб</span></td>
+                          <td class="basket__price-goods">450 руб</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <div class="basket__total-price">Итого: 750 руб.
+                      <a class="btn-slide basket__btn" href="#">Оформить заказ</a>
+                    </div>
+                  </div>
+                </section>
+              </li>
+            </ul>
           </div>
         </nav>
 
@@ -127,7 +136,7 @@
       </header>
 
       <main class="site-main">
-        <div class="breadcrumbs">
+        <div class="breadcrumbs site-main__breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
               <a href='index.html'>Главная</a>
@@ -342,7 +351,7 @@
 
         </section>
 
-        <section class="pagination">
+        <section class="pagination site-main__pagination">
           <h2 class="visually-hidden">Переход на следущую страницу каталога</h2>
 
           <button class="pagination__toggle  pagination__toggle--prev"></button>
@@ -426,7 +435,7 @@
             <img src="img/html-academy.svg" width='130' height='40' alt='htmlacademy-logo'>
           </a>
 
-          <p class="site-footer__descr">Сделано в <a href="https://htmlacademy.ru/">Html Academy</a> <span>спецсимвол</span> 2016 </p>
+          <p class="site-footer__descr">Сделано в <a href="https://htmlacademy.ru/">Html Academy</a> &#169; 2016 </p>
 
         </div>
       </footer>

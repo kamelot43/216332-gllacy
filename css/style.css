@@ -62,7 +62,7 @@ a {
 }
 
 .site-header--inner {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .site-header__schedule {
@@ -236,6 +236,16 @@ a {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
+}
+
+.site-main__pagination {
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.site-main__breadcrumbs {
+  margin-top: -15px;
 }
 
 /*ОСНОВНОЙ КОНТЕНТ : ФИЛЬТРЫ*/
@@ -412,6 +422,19 @@ a {
   outline: 2px solid orange;
 }
 
+/*обертка для карточки товара*/
+.ice-cream::before {
+  content: "";
+  position: absolute;
+  display: none;
+  left: -15px;
+  top: -15px;
+  width: 300px;
+  height: 405px;
+  background-color: rgba(255,255,255,0.2);
+  outline: 3px solid green;
+}
+
  .ice-cream__price {
    margin: 0;
    padding: 0;
@@ -476,10 +499,14 @@ a {
  /*ОСНОВНОЙ КОНТЕНТ : ПАГИНАЦИЯ*/
 
  .pagination {
+   width: 200px;
+
    font-size: 16px;
    line-height: 18px;
    font-weight: 500;
    color: #ffffff;
+
+   outline: 2px solid orange;
  }
 
  .pagination a {
@@ -491,6 +518,10 @@ a {
    margin: 0;
    padding: 0;
    list-style: none;
+ }
+
+ .pagination__item {
+   display: inline-block;
  }
 
  .content-container {

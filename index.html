@@ -25,81 +25,81 @@
         <h1 class="visually-hidden">Магазин эксклюзивного мороженого</h1>
 
         <nav class="site-nav">
-            <div class="site-nav__wrapper">
-              <a class="site-header__site-logo">
-                <img src="img/logo.svg" width="160" height="80" alt="Глейси">
-              </a>
-          <ul class="navigation">
-            <li>
-              <a class="navigation__lnk" href="#">Каталог</a>
-              <ul class="sub-menu disable">
-                <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
-                <li><a class="sub-menu__lnk sub-menu__lnk--active" href="catalog.html">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
-              </ul>
-            </li>
-            <li><a class="navigation__lnk" href="#">Доставка и оплата</a></li>
-            <li><a class="navigation__lnk" href="#">О компании</a></li>
-          </ul>
-          <ul class="navigation navigation--user-navigation">
-            <li class="navigation__item navigation__item--search">
-              <a href="#" class="navigation__lnk navigation__lnk--search">Поиск</a>
+          <div class="site-nav__wrapper">
+            <a class="site-header__site-logo">
+              <img src="img/logo.svg" width="160" height="80" alt="Глейси">
+            </a>
+            <ul class="navigation">
+              <li>
+                <a class="navigation__lnk" href="catalog.html">Каталог</a>
+                <ul class="sub-menu disable">
+                  <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
+                  <li><a class="sub-menu__lnk sub-menu__lnk--active" href="catalog.html">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
+              </li>
+              <li><a class="navigation__lnk" href="#">Доставка и оплата</a></li>
+              <li><a class="navigation__lnk" href="#">О компании</a></li>
+            </ul>
+            <ul class="navigation navigation--user-navigation">
+              <li class="navigation__item navigation__item--search">
+                <a href="#" class="navigation__lnk navigation__lnk--search">Поиск</a>
 
-              <form class="navigation__form disable" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="search">Форма поиска</label>
-                <input class="navigation__input" type="search" id="search" placeholder="Что ищем ?">
-              </form>
-            </li>
-
-            <li class="navigation__item navigation__item--enter">
-              <a class="navigation__lnk navigation__lnk--user" href="login.html">Вход</a>
-
-              <section class="account disable">
-                <h2 class="visually-hidden">Вход в аккаунт</h2>
-
-                <form class="account__form" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="account__input" type="email" name="account-email" id="account-email" placeholder="Электронная почта">
-                  <label class="account__label visually-hidden" for='account-email'>электронная почта</label>
-                  <input class="account__input" type="text" name="password" id="account-password" placeholder="Пароль">
-                  <label class="account__label visually-hidden" for='account-password'>пароль</label>
-                  <button class="btn-slide account__btn" type="submit" value="Войти">Войти</button>
+                <form class="navigation__form disable" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="search">Форма поиска</label>
+                  <input class="navigation__input" type="search" id="search" placeholder="Что ищем ?">
                 </form>
+              </li>
 
-                <div class="account__support">
-                  <ul class="account__list">
-                    <li class="account__item">
-                      <a class="account__lnk" href="#">Забыли пароль ?</a>
-                    </li>
+              <li class="navigation__item navigation__item--enter">
+                <a class="navigation__lnk navigation__lnk--user" href="login.html">Вход</a>
 
-                    <li class="account__item">
-                      <a class="account__lnk" href="#">Новая регистрация</a>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-            </li>
+                <section class="account disable">
+                  <h2 class="visually-hidden">Вход в аккаунт</h2>
 
-            <li class="navigation__item navigation__item--basket">
-              <section class="basket">
-                <h2 class="visually-hidden">Корзина</h2>
-                <a class="basket__lnk navigation__lnk navigation__lnk--user" href="#">
-                  <span class="basket__quantity">Пусто</span>
-                </a>
-                <div class="basket__content basket__content--empty disable">
-                  <table class="basket__table">
-                    <tbody>
-                    </tbody>
-                  </table>
+                  <form class="account__form" action="https://echo.htmlacademy.ru" method="post">
+                    <input class="account__input" type="email" name="account-email" id="account-email" placeholder="Электронная почта">
+                    <label class="account__label visually-hidden" for='account-email'>электронная почта</label>
+                    <input class="account__input" type="text" name="password" id="account-password" placeholder="Пароль">
+                    <label class="account__label visually-hidden" for='account-password'>пароль</label>
+                    <button class="btn-slide account__btn" type="submit" value="Войти">Войти</button>
+                  </form>
 
-                  <div class="basket__total-price">
-                    <a class="btn-slide basket__btn" href="#">Оформить заказ</a>
+                  <div class="account__support">
+                    <ul class="account__list">
+                      <li class="account__item">
+                        <a class="account__lnk" href="#">Забыли пароль ?</a>
+                      </li>
+
+                      <li class="account__item">
+                        <a class="account__lnk" href="#">Новая регистрация</a>
+                      </li>
+                    </ul>
                   </div>
-                </div>
-              </section>
-            </li>
-          </ul>
+                </section>
+              </li>
+
+              <li class="navigation__item navigation__item--basket">
+                <section class="basket">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <a class="basket__lnk navigation__lnk navigation__lnk--user" href="#">
+                    <span class="basket__quantity">Пусто</span>
+                  </a>
+                  <div class="basket__content basket__content--empty disable">
+                    <table class="basket__table">
+                      <tbody>
+                      </tbody>
+                    </table>
+
+                    <div class="basket__total-price">
+                      <a class="btn-slide basket__btn" href="#">Оформить заказ</a>
+                    </div>
+                  </div>
+                </section>
+              </li>
+            </ul>
           </div>
         </nav>
 
@@ -171,9 +171,9 @@
             <h2 class="visually-hidden">Товар: cливочное с апельсиновым джемом и цитрусовой стружкой</h2>
             <img src="img/product_2.jpg" width="267" height="267" alt="Пломбир">
             <div class="ice-cream__container">
-            <p class="ice-cream__price">380 &#8381; <span>кг</span> </p>
-            <p class="ice-cream__descr">Сливочно-кофейное с кусочками шоколада</p>
-          </div>
+              <p class="ice-cream__price">380 &#8381; <span>кг</span> </p>
+              <p class="ice-cream__descr">Сливочно-кофейное с кусочками шоколада</p>
+            </div>
             <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
           </article>
 
@@ -220,51 +220,51 @@
 
         <div class="content-container">
 
-        <section class="feed">
-          <h2 class="visually-hidden">Лента новостей</h2>
-          <article class="feed__news">
-            <h2 class="visually-hidden">Новое в нашем блоге</h2>
+          <section class="feed">
+            <h2 class="visually-hidden">Лента новостей</h2>
+            <article class="feed__news">
+              <h2 class="visually-hidden">Новое в нашем блоге</h2>
 
-            <p class="feed__new">Новое в нашем блоге</p>
-            <p class="feed__descr">10 способов сервировки фруктовых щербетов к столу</p>
-          </article>
-        </section>
+              <p class="feed__new">Новое в нашем блоге</p>
+              <p class="feed__descr">10 способов сервировки фруктовых щербетов к столу</p>
+            </article>
+          </section>
 
-        <section class="subscription">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+          <section class="subscription">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 
-          <form class="subscription__form" action="https://echo.htmlacademy.ru/ " method="get">
+            <form class="subscription__form" action="https://echo.htmlacademy.ru/ " method="get">
 
-            <label class="subscription__label visually-hidden " for="subscription-mail">Электронная почта</label>
-            <input class="subscription__input " type="email" name="subscription-mail" id="subscription-mail" placeholder="Электронная почта">
+              <label class="subscription__label visually-hidden " for="subscription-mail">Электронная почта</label>
+              <input class="subscription__input " type="email" name="subscription-mail" id="subscription-mail" placeholder="Электронная почта">
 
-            <button class="btn-slide subscription__btn" type="submit">Отправить</button>
+              <button class="btn-slide subscription__btn" type="submit">Отправить</button>
 
-          </form>
+            </form>
 
 
-        </section>
-      </div>
+          </section>
+        </div>
       </main>
     </div>
     <section class="contacts">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-        <div class="content-wrapper">
-      <div class="contacts__inner">
+      <div class="content-wrapper">
+        <div class="contacts__inner">
 
-        <p class="contacts__descr">
-          Адрес главного офиса и офлайн магазина:<br>
-          <span> ул.Большая Конюшенная 19/8, Санкт-Петербург</span>
-        </p>
+          <p class="contacts__descr">
+            Адрес главного офиса и офлайн магазина:<br>
+            <span> ул.Большая Конюшенная 19/8, Санкт-Петербург</span>
+          </p>
 
-        <p class="contacts__descr">
-           Для заказов по телефону <br>
-           <span> 8 812 450-25-25 </span>
-        </p>
+          <p class="contacts__descr">
+            Для заказов по телефону <br>
+            <span> 8 812 450-25-25 </span>
+          </p>
 
-        <a class="btn-slide contacts__btn" href="#">Форма обратной связи</a>
+          <a class="btn-slide contacts__btn" href="#">Форма обратной связи</a>
+        </div>
       </div>
-    </div>
     </section>
 
     <div class="content-wrapper">
@@ -318,7 +318,7 @@
             <img src="img/html-academy.svg" width='130' height='40' alt='htmlacademy-logo'>
           </a>
 
-          <p class="site-footer__descr">Сделано в <a href="https://htmlacademy.ru/">Html Academy</a>  &#169;  2016 </p>
+          <p class="site-footer__descr">Сделано в <a href="https://htmlacademy.ru/">Html Academy</a> &#169; 2016 </p>
 
         </div>
       </footer>
