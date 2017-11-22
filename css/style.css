@@ -457,6 +457,10 @@ a {
   outline: 2px solid orange;
 }
 
+.ice-cream img {
+  border-radius: 60%;
+}
+
 /*обертка для карточки товара*/
 .ice-cream::before {
   content: "";
@@ -470,18 +474,39 @@ a {
   outline: 3px solid green;
 }
 
+.ice-cream::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 61px;
+  height: 61px;
+
+  background-image: url('../img/hit.svg');
+}
+
  .ice-cream__price {
+   position: absolute;
+   bottom: 65px;
+
    margin: 0;
    padding: 0;
 
-   font-size: 30px;
-   line-height: 30px;
+   font-size: 45px;
+   line-height: 45px;
    font-weight: 700;
+ }
+
+ .ice-cream__price span {
+   font-size: 30px;
  }
 
  .ice-cream__descr {
    margin: 0;
    padding: 0;
+   margin-top: 10px;
+
+   text-align: center;
    text-decoration: underline;
  }
 
