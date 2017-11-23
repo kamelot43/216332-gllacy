@@ -446,7 +446,7 @@ a {
 }
 
 .goods__item {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК МОРОЖЕНОЕ*/
@@ -513,20 +513,22 @@ a {
  /*ОСНОВНОЙ КОНТЕНТ : БЛОК ПРЕИМУЩЕСТВА*/
 
  .advantages {
-  padding-top: 30px;
-  padding: 20px;
+  padding: 22px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   margin-bottom: 40px;
   background-color: #ebdec0;
   background-image: url("../img/layer_1.png");
   background-position: 0 0;
   background-repeat: repeat;
   color: #323232;
+  border-radius: 15px;
  }
 
  .advantages__lead {
    margin: 0;
    padding: 0;
-   margin-bottom: 15px;
+   margin-bottom: 10px;
 
    font-size: 24px;
    line-height: 30px;
@@ -549,11 +551,39 @@ a {
  }
 
  .advantages__item {
-   width: 500px;
+  position: relative;
 
-   margin-bottom: 15px;
-   padding-left: 40px;
-   outline: 2px solid green;
+  width: 487px;
+  padding-top: 15px;
+  padding-left: 55px;
+  outline: 2px solid green;
+ }
+
+ .advantages__item::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 50px;
+   height: 50px;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+ }
+
+ .advantages__item--plombir::before {
+   background-image: url('../img/plombir__small.svg');
+ }
+
+ .advantages__item--cow::before {
+   background-image: url('../img/cow.svg');
+ }
+
+ .advantages__item--leaflet::before {
+   background-image: url('../img/leaflet.svg');
+ }
+
+ .advantages__item--thermometr::before {
+   background-image: url('../img/thermometr.svg');
  }
 
  /*ОСНОВНОЙ КОНТЕНТ : ПАГИНАЦИЯ*/
@@ -601,12 +631,18 @@ a {
   min-height: 220px;
 
   padding: 20px;
-  padding-top: 30px;
+  padding-top: 20px;
   box-sizing: border-box;
+
+  background-image: url('../img/strawberry_milk.jpg');
+  background-repeat: no-repeat;
+  background-position: 15% 40%;
 
   color: #323232;
   background-color: #ffffff;
   outline: 2px solid orange;
+
+  border-radius: 15px;
  }
 
  .feed__new {
@@ -615,6 +651,8 @@ a {
  }
 
  .feed__descr {
+   width: 280px;
+
    margin: 0;
    padding: 0;
    font-size: 24px;
@@ -626,14 +664,28 @@ a {
  .subscription {
    width: 560px;
    min-height: 220px;
+  padding: 5px;
 
-   padding: 30px;
-   padding-top: 40px;
    box-sizing: border-box;
 
    color: #323232;
    background-color: #ffffff;
+
+   background-image: url('../img/post_bg.jpg');
+   border-radius: 15px;
    outline: 2px solid orange;
+ }
+
+ .subscription__wrapper {
+   width: 550px;
+   min-height: 210px;
+
+   padding: 20px;
+   padding-top: 25px;
+
+   box-sizing: border-box;
+   border-radius: 10px;
+   background-color: #f8f7f4;
  }
 
  .subscription p {
@@ -642,13 +694,18 @@ a {
  }
 
  .subscription__form {
-   margin-top: 45px;
+   margin-top: 35px;
  }
 
  .subscription__input {
-   font: inherit;
+  font: inherit;
+  width: 370px;
+
+  padding: 10px;
 
   background-color: transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
   border: 2px solid #d3d3d2;
  }
 
@@ -795,7 +852,7 @@ a {
   .btn-slide {
     display: inline-block;
 
-    padding: 10px 23px;
+    padding: 10px 20px;
 
     font-family: "Roboto", Arial, sans-serif;
     font-size: 18px;
