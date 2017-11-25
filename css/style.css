@@ -19,13 +19,19 @@
   font-style: normal;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -47,6 +53,7 @@ body {
 a {
   text-decoration: none;
 }
+
 
 .disable {
   display: none;
@@ -85,6 +92,7 @@ a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  text-align: right;
 }
 
 .site-header__schedule span {
@@ -95,7 +103,27 @@ a {
 
 .site-wrapper {
   background-color: #849d8f;
+  background-image: url("../img/plombir_1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/plombir_2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/plombir_3.png");
+}
+
 .site-nav {
   font-size: 16px;
   line-height: 22px;
@@ -159,11 +187,34 @@ a {
   position: absolute;
   left: -70px;
   top: 70px;
+  padding: 20px;
+
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.account__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.account__input {
+ font: inherit;
+ width: 240px;
+
+ padding: 10px;
+ margin-bottom: 20px;
+
+ background-color: transparent;
+ border-radius: 5px;
+ box-sizing: border-box;
+ border: 2px solid #d3d3d2;
 }
 
 .account__btn {
-  border: 0;
-  background-color: transparent;
+  align-self: flex-start;
 }
 
 .account__list {
@@ -177,6 +228,7 @@ a {
   color: #323232;
   text-decoration: underline;
 }
+
 
 .sub-menu {
   position: absolute;
@@ -225,13 +277,18 @@ a {
 /*ОСНОВНОЙ КОНТЕНТ : ЭЛЕМЕНТЫ СЛАЙДЕРА*/
 
 .slider {
+  position: relative;
   margin-bottom: 40px;
   outline: 2px solid pink;
 }
 
 .slide {
   position: relative;
+  text-align: center;
+
+  display: none;
 }
+
 .slide__title {
   width: 670px;
 
@@ -246,6 +303,60 @@ a {
   text-align: center;
   vertical-align: middle;
 }
+
+.controls-slider {
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  z-index: 20;
+  font-size: 0;
+}
+
+
+.controls-slider__toggle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/plombir_1.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+    background-image: url("../img/plombir_2.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+    background-image: url("../img/plombir_3.png");
+}
+
+#product-1:checked ~ .site-wrapper  #slide-1,
+#product-2:checked ~ .site-wrapper  #slide-2,
+#product-3:checked ~ .site-wrapper  #slide-3 {
+  display: block;
+}
+
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+
+
 
 .site-main__title {
   margin: 0;
@@ -265,6 +376,8 @@ a {
 .site-main__breadcrumbs {
   margin-top: -15px;
 }
+
+
 
 /*ОСНОВНОЙ КОНТЕНТ : ФИЛЬТРЫ*/
 
@@ -387,12 +500,14 @@ a {
   display: flex;
   justify-content: space-between;
 
+
    margin-bottom: 40px;
 
   outline: 2px solid orange;
 }
 
 .special-offer__choice {
+  position: relative;
   height: 230px;
   width: 560px;
 
@@ -435,6 +550,11 @@ a {
   font-weight: 700;
 }
 
+.special-offer__btn {
+  position: absolute;
+  right: 20px;
+}
+
 
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК ТОВАРЫ*/
 
@@ -454,7 +574,6 @@ a {
 .ice-cream {
   position: relative;
   width: 270px;
-  outline: 2px solid orange;
 }
 
 .ice-cream img {
@@ -462,16 +581,26 @@ a {
 }
 
 /*обертка для карточки товара*/
-.ice-cream::before {
+.ice-cream:hover::before {
   content: "";
   position: absolute;
-  display: none;
-  left: -15px;
-  top: -15px;
-  width: 300px;
+  display: block;
+  left: -13px;
+  top: -10px;
+  width: 293px;
   height: 405px;
+
+  border-radius: 5px;
   background-color: rgba(255,255,255,0.2);
-  outline: 3px solid green;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.ice-cream:hover .btn-slide--disable {
+  position: absolute;
+  display: block;
+  left: 10%;
+  bottom: -55px;
 }
 
 .ice-cream::after {
@@ -735,7 +864,11 @@ a {
 
     min-height: 430px;
     width: auto;
-    background: thistle;
+
+    background-image: url('../img/map.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
   }
 
   .contacts__inner {
@@ -743,7 +876,7 @@ a {
     min-height: 305px;
 
     margin-left: auto;
-    padding: 20px;
+    padding: 25px;
     padding-top: 25px;
 
     box-sizing: border-box;
@@ -757,8 +890,14 @@ a {
   .contacts__descr {
     width: 220px;
     margin: 0;
-    margin-bottom: 15px;
     padding: 0;
+  }
+
+  .contacts__descr:nth-child(3) {
+    width: 180px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+
   }
 
   .contacts__descr span {
@@ -789,6 +928,11 @@ a {
     padding: 0;
   }
 
+  .site-footer__logo {
+    display: block;
+    margin-top: -15px;
+  }
+
   .site-footer__descr a {
     text-decoration: underline;
     color: #ffffff;
@@ -801,41 +945,74 @@ a {
 
   .social__lnk {
     display: block;
-    width: 40px;
-    height: 40px;
-    outline: 2px solid green;
-
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: 3px solid silver;
+    border-radius: 50%;
     font-size: 0;
   }
 
-  .social__list,
-  .specification__list {
-    list-style: none;
+  .social__lnk--twiter {
+    background-image: url('../img/twiter.svg');
+  }
+
+  .social__lnk--facebook {
+    background-image: url('../img/facebook.svg');
+  }
+
+  .social__lnk--instagram {
+    background-image: url('../img/instagram.svg');
+  }
+
+  .social__lnk--vk {
+    background-image: url('../img/vk.svg');
+  }
+
+  .social__list {
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+
     margin: 0;
     padding: 0;
+    list-style: none;
   }
 
-  .specification__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 350px;
-    padding-left: 30px;
-
-    outline: 2px solid orange;
+  .specification__table {
+    padding-left: 5px;
   }
 
+ .specification td {
+   min-width: 140px;
+ }
 
-  .specification__lnk {
+ .specification a {
+   padding-bottom: 2px;
+
+   border-bottom: 1px solid white;
+   color: white;
+
+ }
+
+ .specification__heart {
+   position: relative;
+ }
+
+ .specification__heart::before {
+    content: "";
+    position: absolute;
     display: block;
-    width: 170px;
-    color: #ffffff;
-  }
+    left: -21px;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/heart.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
 
-  .specification__lnk--bold {
-    font-weight: 700;
-  }
+
 
   /* POPUP */
 
@@ -868,12 +1045,26 @@ a {
 
   }
 
+.btn-slide:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.btn-slide:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
   .btn-slide--lg {
     padding: 10px 40px;
 
     font-size: 32px;
     line-height: 44px;
     border-radius: 100px;
+  }
+
+  .btn-slide--wide {
+    padding: 10px 25px;
   }
 
   .btn-slide--disable {
