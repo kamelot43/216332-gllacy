@@ -157,13 +157,14 @@
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="filter__fieldset filter__fieldset--sort">
               <legend class="filter__legend">Сортировка :</legend>
-              <div class="filter__wrapper">
+              <div class="filter__wrapper filter__wrapper--empty">
               <select class="filter__select">
                  <option value="popular">по популярности</option>
                   <option value="cheap">сначала недорогие</option>
                   <option value="expensive">сначала дорогие</option>
                   <option value="fatness">по жирности</option>
                </select>
+               <div class="filter__arrow"></div>
              </div>
             </fieldset>
 
@@ -212,34 +213,34 @@
 
             </fieldset>
 
-            <fieldset class="filter__fieldset">
+            <fieldset class="filter__fieldset filter__fieldset--filling">
               <legend class="filter__legend">Наполнители :</legend>
                 <div class="filter__wrapper">
               <ul class="filter__list">
 
-                <li class="filter__item">
+                <li class="filter__item filter__item--checkbox">
                   <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-1'>
-                  <label class="filter__label" for="filling-1">шоколадные</label>
+                  <label class="filter__label filter__label--checkbox" for="filling-1">шоколадные</label>
                 </li>
 
-                <li class="filter__item">
+                <li class="filter__item filter__item--checkbox">
                   <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-2'>
-                  <label class="filter__label" for="filling-2">сахарные присыпки</label>
+                  <label class="filter__label filter__label--checkbox" for="filling-2">сахарные присыпки</label>
                 </li>
 
-                <li class="filter__item">
+                <li class="filter__item filter__item--checkbox">
                   <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-3'>
-                  <label class="filter__label" for="filling-3">фрукты</label>
+                  <label class="filter__label filter__label--checkbox" for="filling-3">фрукты</label>
                 </li>
 
-                <li class="filter__item">
+                <li class="filter__item filter__item--checkbox">
                   <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-4'>
-                  <label class="filter__label" for="filling-4">сиропы</label>
+                  <label class="filter__label filter__label--checkbox" for="filling-4">сиропы</label>
                 </li>
 
-                <li class="filter__item">
+                <li class="filter__item filter__item--checkbox">
                   <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-5'>
-                  <label class="filter__label" for="filling-5">джемы</label>
+                  <label class="filter__label filter__label--checkbox" for="filling-5">джемы</label>
                 </li>
 
               </ul>
