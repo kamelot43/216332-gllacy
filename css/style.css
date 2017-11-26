@@ -139,6 +139,8 @@ a {
   outline: 2px solid red;
 }
 
+
+
 .navigation,
 .sub-menu {
   list-style: none;
@@ -146,7 +148,7 @@ a {
 
 .navigation__lnk {
   display: block;
-  padding: 8px 14px;
+  padding: 5px 14px;
   color: #ffffff;
 }
 
@@ -163,7 +165,8 @@ a {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-left: 5px;
+  padding: 0 10px;
+
   min-width: 380px;
   outline: 2px solid green;
 }
@@ -171,6 +174,7 @@ a {
 .navigation--user-navigation {
   justify-content: flex-start;
   min-width: 275px;
+  padding: 0;
   margin-left: auto;
 }
 
@@ -178,18 +182,92 @@ a {
   margin-left: 10px;
 }
 
-.navigation li {
-  display: inline-block;
-}
 
 .navigation__lnk {
   display: block;
 }
 
+.navigation li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navigation> li:hover > .sub-menu {
+  display: block;
+}
+
+
 .navigation__lnk--user {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+  top: 58px;
+  left: 5px;
+  width: 142px;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: #f8f7f4;
+
+  border-radius: 5px;
+  color: black;
+}
+
+.sub-menu li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu__lnk {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: black;
+  }
+
+.sub-menu__lnk--highlight {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom: 2px solid #d1d0ce;
+}
+
+
+
+
+
+
+/*находимся на странице*/
+.sub-menu__lnk--active {
+  background-color: #d07058;
+}
+
+.sub-menu__lnk--highlight {
+  font-weight: 700;
+}
+
+.sub-menu a:hover,
+.sub-menu a:focus {
+  outline: 0;
+  background-color: #fbded7;
+}
+
+.sub-menu a:active {
+  background-color: #f6b5a5;
 }
 
 .account {
@@ -239,47 +317,7 @@ a {
 }
 
 
-.sub-menu {
-  position: absolute;
-  top: 65px;
 
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  background-color: #f8f7f4;
-  color: black;
-}
-
-.sub-menu a {
-  display: block;
-  padding: 10px;
-  color: black;
-}
-
-.sub-menu li {
-  display: block;
-}
-
-/*находимся на странице*/
-.sub-menu__lnk--active {
-  background-color: #d07058;
-}
-
-.sub-menu__lnk--highlight {
-  font-weight: 700;
-}
-
-.sub-menu a:hover,
-.sub-menu a:focus {
-  outline: 0;
-  background-color: #fbded7;
-}
-
-.sub-menu a:active {
-  background-color: #f6b5a5;
-}
 
 
 
