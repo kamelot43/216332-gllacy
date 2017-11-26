@@ -109,6 +109,10 @@ a {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
+.site-wrapper {
+  background-image: none;
+}
+
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
@@ -160,13 +164,18 @@ a {
   margin: 0;
   padding: 0;
   margin-left: 5px;
-  width: 380px;
+  min-width: 380px;
   outline: 2px solid green;
 }
 
 .navigation--user-navigation {
-  width: 260px;
+  justify-content: flex-start;
+  min-width: 275px;
   margin-left: auto;
+}
+
+.navigation--user-navigation li{
+  margin-left: 10px;
 }
 
 .navigation li {
@@ -382,13 +391,23 @@ a {
 /*ОСНОВНОЙ КОНТЕНТ : ФИЛЬТРЫ*/
 
 .filter {
-  width: 855px;
+  width: 865px;
 
   margin-bottom: 20px;
 
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+}
+
+.filter__wrapper {
+  height: 36px;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  background-color: rgba(255,255,255,.2);
+
+  border-radius: 18px;
+  box-sizing: border-box;
 }
 
 
@@ -400,10 +419,11 @@ a {
 
 .filter__fieldset {
   border: none;
-  margin-bottom: 20px;
+  margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 
-  min-height: 55px; /*временно*/
+  height: 55px; /*временно*/
   outline: 2px solid green;
 }
 
@@ -416,7 +436,7 @@ a {
 }
 
 .filter__fieldset--fatness {
-  width: 410px;
+  width: 420px;
 }
 
 .filter__legend {
@@ -427,19 +447,99 @@ a {
   font-weight: 500;
 }
 
+.filter__label--radio {
+  position: relative;
+  padding-left: 30px;
+}
+
+.filter__item--radio:not(:last-child) {
+   margin-right: 15px;
+}
+
+
 .filter__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 .filter__item {
   display: inline-block;
+  position: relative;
 }
+
+.filter__label--radio::before {
+  content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 3px solid #ecf0ee;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.filter__input--radio:checked +.filter__label--radio::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ecf0ee;
+  }
+
 
 .filter__btn {
   border: none;
   background-color: transparent;
+}
+
+.range-filter {
+  position: relative;
+  vertical-align: top;
+}
+
+.range-filter__scale{
+  height: 3px;
+
+  background: #d1dad3;
+}
+
+.range-filter__bar {
+  width: 70%;
+  height: 3px;
+  margin-left: 30px;
+
+  background: #f8f7f4;
+}
+
+.range-filter__toggle {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #b4b4b4;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.range-filter__toggle--min{
+  left: 40px;
+}
+
+.range-filter__toggle--max{
+  left: 160px;
 }
 
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК КОРЗИНА*/
@@ -472,10 +572,27 @@ a {
 
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК ХЛЕБНЫЕ КРОШКИ*/
 .breadcrumbs {
+  min-width: 220px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
+}
+
+
+
+.breadcrumbs__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 220px;
+
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 .breadcrumbs a {
@@ -483,15 +600,23 @@ a {
   color: inherit;
 }
 
-.breadcrumbs__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.breadcrumbs__item {
+  position: relative;
 }
 
-.breadcrumbs__item {
-  display: inline-block;
+.breadcrumbs__item:not(:last-child) {
+  padding-right: 17px;
 }
+
+.breadcrumbs__item:not(:last-child)::after {
+    content: "»";
+    position: absolute;
+    top: 0;
+    right: 4px;
+    color: rgb(255, 255, 255);
+}
+
+
 
 
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ*/
@@ -593,6 +718,7 @@ a {
   border-radius: 5px;
   background-color: rgba(255,255,255,0.2);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  z-index: 100;
 
 }
 
@@ -601,9 +727,10 @@ a {
   display: block;
   left: 10%;
   bottom: -55px;
+  z-index: 100;
 }
 
-.ice-cream::after {
+.ice-cream--hit::after {
   content: "";
   position: absolute;
   display: block;
@@ -612,6 +739,7 @@ a {
   height: 61px;
 
   background-image: url('../img/hit.svg');
+  z-index: 10;
 }
 
  .ice-cream__price {
@@ -1084,8 +1212,7 @@ a {
     position: relative;
 
     min-height: 33px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px;
     padding-right: 15px;
     padding-left: 45px;
 
@@ -1139,8 +1266,7 @@ a {
   }
 
   .btn-custom--basket {
-    padding-left: 45px;
-    padding-right: 35px;
+    min-width: 117px;
   }
 
   .btn-custom--basket::before {

@@ -26,7 +26,7 @@
         <nav class="site-nav">
           <div class="site-nav__wrapper">
             <a class="site-header__site-logo" href="index.html">
-              <img src="img/logo.svg" width="160" height="80" alt="Глейси">
+              <img src="img/logo.svg" width="153" height="53" alt="Глейси">
             </a>
             <ul class="navigation">
               <li>
@@ -157,16 +157,19 @@
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="filter__fieldset filter__fieldset--sort">
               <legend class="filter__legend">Сортировка :</legend>
+              <div class="filter__wrapper">
               <select class="filter__select">
                  <option value="popular">по популярности</option>
                   <option value="cheap">сначала недорогие</option>
                   <option value="expensive">сначала дорогие</option>
                   <option value="fatness">по жирности</option>
                </select>
+             </div>
             </fieldset>
 
             <fieldset class="filter__fieldset filter__fieldset--price">
               <legend class="filter__legend">Цена: 100 руб. - 500 руб.</legend>
+                <div class="filter__wrapper">
               <section class="range-filter">
                 <h2 class="visually-hidden">Фильтр по цене</h2>
                 <div class="range-filter__scale">
@@ -175,71 +178,72 @@
                 <div class="range-filter__toggle range-filter__toggle--min">min</div>
                 <div class="range-filter__toggle range-filter__toggle--max">max</div>
               </section>
+            </div>
             </fieldset>
 
             <fieldset class="filter__fieldset filter__fieldset--fatness">
               <legend class="filter__legend">Жирность :</legend>
+                <div class="filter__wrapper">
 
               <ul class="filter__list">
-                <li class="filter__item">
-                  <input class="filter__input filter__input--radio" type="radio" name="fatness" id='fatness-1'>
-                  <label class="filter__label" for="fatness-1">0%</label>
+                <li class="filter__item filter__item--radio">
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-1'>
+                  <label class="filter__label filter__label--radio" for="fatness-1">0%</label>
                 </li>
 
-                <li class="filter__item">
-                  <input class="filter__input filter__input--radio" type="radio" name="fatness" id='fatness-2'>
-                  <label class="filter__label" for="fatness-2">до 10%</label>
+                <li class="filter__item filter__item--radio">
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-2' checked>
+                  <label class="filter__label filter__label--radio" for="fatness-2">до 10%</label>
                 </li>
 
-                <li class="filter__item">
-                  <input class="filter__input filter__input--radio" type="radio" name="fatness" id='fatness-3'>
-                  <label class="filter__label" for="fatness-2">до 10%</label>
+                <li class="filter__item filter__item--radio">
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-3'>
+                  <label class="filter__label filter__label--radio" for="fatness-3">до 30%</label>
                 </li>
 
-                <li class="filter__item">
-                  <input class="filter__input filter__input--radio" type="radio" name="fatness" id='fatness-4'>
-                  <label class="filter__label" for="fatness-3">до 30%</label>
-                </li>
 
-                <li class="filter__item">
-                  <input class="filter__input filter__input--radio" type="radio" name="fatness" id='fatness-5'>
-                  <label class="filter__label" for="fatness-4">выше 30%</label>
+                <li class="filter__item filter__item--radio">
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-5'>
+                  <label class="filter__label filter__label--radio" for="fatness-5">выше 30%</label>
                 </li>
 
               </ul>
+            </div>
 
             </fieldset>
 
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Наполнители :</legend>
+                <div class="filter__wrapper">
               <ul class="filter__list">
 
                 <li class="filter__item">
-                  <input class="filter__input filter__input--checkbox" type="checkbox" name="filling" id='filling-1'>
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-1'>
                   <label class="filter__label" for="filling-1">шоколадные</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__input filter__input--checkbox" type="checkbox" name="filling" id='filling-2'>
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-2'>
                   <label class="filter__label" for="filling-2">сахарные присыпки</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__input filter__input--checkbox" type="checkbox" name="filling" id='filling-3'>
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-3'>
                   <label class="filter__label" for="filling-3">фрукты</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__input filter__input--checkbox" type="checkbox" name="filling" id='filling-4'>
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-4'>
                   <label class="filter__label" for="filling-4">сиропы</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__input filter__input--checkbox" type="checkbox" name="filling" id='filling-5'>
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-5'>
                   <label class="filter__label" for="filling-5">джемы</label>
                 </li>
 
               </ul>
+            </div>
             </fieldset>
 
             <button class="btn-filter filter__btn" type="submit">Применить</button>
@@ -257,7 +261,7 @@
             <img src="img/product_1.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">310 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -265,7 +269,7 @@
             <img src="img/product_2.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">380 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочно-кофейное с кусочками шоколада</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+          <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -273,7 +277,7 @@
             <img src="img/product_3.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">355 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочно-клубничное с присыпкой из белого шоколада</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -281,7 +285,7 @@
             <img src="img/product_4.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">415 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочное крем-брюле с карамельной подливкой</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -289,7 +293,7 @@
             <img src="img/product_5.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">325 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочное с брисничным джемом</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+              <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -297,7 +301,7 @@
             <img src="img/product_6.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">410 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочно-черничное с цельными ягодами черники</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -305,7 +309,7 @@
             <img src="img/product_7.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">375 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочно-лимонное с карамельной присыпкой</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -313,7 +317,7 @@
             <img src="img/product_8.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">320 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочное с шоколадной стружкой</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -321,7 +325,7 @@
             <img src="img/product_9.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">440 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочно-ванильное с кусочками шоколада</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -329,7 +333,7 @@
             <img src="img/product_10.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">435 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочное с ментоловым сиропом</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -337,7 +341,7 @@
             <img src="img/product_11.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">355 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочное с кусочками черного шоколада</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -345,7 +349,7 @@
             <img src="img/product_12.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">420 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочное с мятным сиропом</p>
-            <a class="btn-slide ice-cream__btn disable" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
 
@@ -409,24 +413,26 @@
         </div>
 
         <div class="site-footer__specification specification">
-          <ul class="specification__list">
-
-            <li class="specification__item">
-              <a class="specification__lnk" href="#"> Для поставщиков</a>
-            </li>
-
-            <li class="specification__item">
-              <a class="specification__lnk" href="#"> Наши документы</a>
-            </li>
-
-            <li class="specification__item">
-              <a class="specification__lnk" href="#"> О производстве</a>
-            </li>
-
-            <li class="specification__item">
-              <a class="specification__lnk" href="#"> Экологические стандарты</a>
-            </li>
-          </ul>
+          <table class="specification__table">
+              <tbody>
+                <tr>
+                  <td>
+                    <a class="specification__heart" href="#">Для поставщиков</a>
+                  </td>
+                  <td>
+                    <a href="#">Наши документы</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">О производстве</a>
+                  </td>
+                  <td>
+                    <a href="#">Экологические стандарты</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
         </div>
 
         <div class="site-footer__copyright">
