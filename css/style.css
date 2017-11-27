@@ -277,6 +277,11 @@ a {
   display: block;
 }
 
+.navigation> li:hover .basket__content {
+  display: block;
+}
+
+
 .account {
   position: absolute;
   display: none;
@@ -289,6 +294,7 @@ a {
 
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0,0,0,.4);
+  z-index: 20;
 }
 
 .account__form {
@@ -391,6 +397,98 @@ a {
   line-height: 24px;
   color: #999999;
 }
+
+/*ОСНОВНОЙ КОНТЕНТ : БЛОК КОРЗИНА*/
+
+.basket {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+
+}
+
+.basket__table {
+  width: 510px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #cacac7;
+}
+
+.basket__table tr {
+  height: 45px;
+}
+
+.basket__table td {
+vertical-align: top;
+padding-top: 16px;
+}
+
+.basket__img-td {
+  position: relative;
+  top: -5px;
+}
+
+.basket__goods-formula {
+  text-align: center;
+}
+
+.basket__content {
+  position: absolute;
+  display: none;
+  left: -270px;
+  top: 58px;
+
+  padding-top: 10px;
+  padding-bottom: 21px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #f8f7f4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0,0,0,.4);
+  z-index: 20;
+}
+
+.basket__content--empty {
+  display: none !important;
+}
+
+
+.basket__goods-title {
+  width: 220px;
+}
+
+
+.basket__price {
+  opacity: 0.6;
+}
+
+.basket__del {
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  background: url('../img/basket-del.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.basket__img {
+  border-radius: 50%;
+}
+
+.basket__total-price {
+  width: 190px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: right;
+
+  margin-left: auto;
+}
+
 
 
 
@@ -745,33 +843,6 @@ a {
   left: 120px;
 }
 
-/*ОСНОВНОЙ КОНТЕНТ : БЛОК КОРЗИНА*/
-
-.basket {
-  /*font-size: 13px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #323232;
-  */
-}
-.basket__content {
-  background-color: #ffffff;
-}
-
-.basket__price {
-  opacity: 0.6;
-}
-
-.basket__del {
-  border: 0;
-  font-size: 0;
-}
-
-.basket__total-price {
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 700;
-}
 
 /*ОСНОВНОЙ КОНТЕНТ : БЛОК ХЛЕБНЫЕ КРОШКИ*/
 .breadcrumbs {
@@ -1454,6 +1525,11 @@ a {
     font-size: 32px;
     line-height: 44px;
     border-radius: 100px;
+  }
+
+  .btn-slide--basket {
+    padding-right: 14px;
+    padding-left: 14px;
   }
 
   .btn-slide--wide {
