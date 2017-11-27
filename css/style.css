@@ -238,17 +238,16 @@ a {
   color: black;
   }
 
+
 .sub-menu__lnk--highlight {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 20px;
   padding-left: 20px;
   border-bottom: 2px solid #d1d0ce;
+
+  border-radius: none;
 }
-
-
-
-
 
 
 /*находимся на странице*/
@@ -270,14 +269,26 @@ a {
   background-color: #f6b5a5;
 }
 
+.navigation> li:hover > .account {
+  display: block;
+}
+
+.navigation> li:hover > .search {
+  display: block;
+}
+
 .account {
   position: absolute;
-  left: -70px;
-  top: 70px;
+  display: none;
+  left: -130px;
+  top: 58px;
   padding: 20px;
 
-  background-color: white;
+  background-color: #f8f7f4;
   box-sizing: border-box;
+
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0,0,0,.4);
 }
 
 .account__form {
@@ -287,12 +298,24 @@ a {
 }
 
 
+
+.account__support {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+
+
+
 .account__input {
  font: inherit;
+ font-size: 14px;
+ line-height: 24px;
+ color: #333333;
  width: 240px;
 
  padding: 10px;
- margin-bottom: 20px;
+ margin-bottom: 15px;
 
  background-color: transparent;
  border-radius: 5px;
@@ -300,12 +323,23 @@ a {
  border: 2px solid #d3d3d2;
 }
 
+.account__input::-webkit-input-placeholder {
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
 .account__btn {
   align-self: flex-start;
+
+  border: none;
 }
 
 .account__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .account__lnk {
@@ -316,8 +350,47 @@ a {
   text-decoration: underline;
 }
 
+.account li {
+  padding: 0;
+}
 
 
+.search {
+  display: none;
+  position: absolute;
+  left: -295px;
+  top: 58px;
+  width: 340px;
+  height: 85px;
+
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  box-sizing: border-box;
+
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0,0,0,.4);
+}
+
+.search__input {
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  width: 310px;
+
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid #d3d3d2;
+}
+
+.search__input::-webkit-input-placeholder {
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
 
 
 
