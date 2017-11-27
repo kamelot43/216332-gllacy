@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 <!--<style>
   HTML {
-    background: url( 'img/search.png' ) 50% 0 no-repeat;
+    background: url( 'img/modal.png' ) 50% 0 no-repeat;
     opacity: .5;
   }
   BODY {
@@ -336,8 +336,10 @@
     </div>
 
 
-    <section class="popup disable">
+    <section class="popup">
       <h2 class="visually-hidden">Заполните форму для обратной связи</h2>
+      <h3 class="popup__title">Мы обязательно Вам ответим !</h3>
+      <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
 
       <form class="popup__form" action="https://echo.htmlacademy.ru/ " method="get">
 
@@ -345,17 +347,17 @@
 
           <li class="popup__item">
             <label class="popup__label visually-hidden" for="popup-name">Как вас зовут ?</label>
-            <input class="popup__input " type="text" name="popup-name" id="popup-name" placeholder="Как вас зовут ?">
+            <input class="popup__input " type="text" name="popup-name" id="popup-name" placeholder="Как вас зовут ?" required>
           </li>
 
           <li class="popup__item">
             <label class="popup__label visually-hidden " for="popup-mail">Ваша почта для ответа ?</label>
-            <input class="popup__input " type="email" name="popup-mail" id="popup-mail" placeholder="Ваша почта для ответа ?">
+            <input class="popup__input " type="email" name="popup-mail" id="popup-mail" placeholder="Ваша почта для ответа ?" required>
           </li>
 
           <li class="popup__item">
             <label class="popup__label visually-hidden" for="popup-feedback">Напишите что-нибудь ...</label>
-            <textarea class="popup__textarea" name="popup-feedback" id='popup-feedback' placeholder="Напишите что-нибудь ..."></textarea>
+            <textarea class="popup__textarea" name="popup-feedback" id='popup-feedback' placeholder="Напишите что-нибудь ..." required></textarea>
           </li>
 
         </ul>
@@ -364,6 +366,7 @@
 
       </form>
     </section>
+    <div class="overlay"></div>
   </div>
 
 </body>
