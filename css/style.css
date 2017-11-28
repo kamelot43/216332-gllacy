@@ -527,6 +527,11 @@ padding-top: 16px;
   cursor: pointer;
 }
 
+.controls-slider__toggle:hover {
+  background-color: rgba(255,255,255,0.4);
+}
+
+
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/plombir_1.png");
@@ -1110,6 +1115,12 @@ padding-top: 16px;
    background-image: url('../img/icon-right.svg');
  }
 
+ .pagination__toggle--next:hover,
+ .pagination__toggle--next:active {
+   background-image: url('../img/icon-right-hover.svg');
+ }
+
+
  .pagination__toggle--prev {
    left: 0;
    background-image: url('../img/icon-right.svg');
@@ -1122,7 +1133,7 @@ padding-top: 16px;
    display: block;
    width: 21px;
    height: 21px;
-   padding-left: 5px;
+   padding-left: 6px;
    padding-top: 2px;
    font: inherit;
    color: inherit;
@@ -1134,6 +1145,11 @@ padding-top: 16px;
    color: #323232;
    background-color: #ffffff;
  }
+
+ .pagination__btn:not(.pagination__btn--active ):hover {
+   background-color: rgba(255,255,255,0.2);
+ }
+
 
  .pagination__list {
    margin: 0;
@@ -1320,10 +1336,15 @@ padding-top: 16px;
   }
 
   .site-footer__descr a {
-    text-decoration: underline;
+    border-bottom: 1px solid white;
     color: #ffffff;
   }
 
+  .site-footer__descr a:hover,
+  .site-footer__descr a:active {
+    border-bottom: 1px solid #ffbc9e;
+    color: #ffbc9e;
+  }
 
   .social__item {
     display: inline-block;
@@ -1335,10 +1356,18 @@ padding-top: 16px;
     height: 32px;
     background-repeat: no-repeat;
     background-position: top center;
-    border: 3px solid silver;
+    border: 3px solid #beccc4;
     border-radius: 50%;
     font-size: 0;
   }
+
+  .social__lnk:hover,
+  .social__lnk:active,
+  .social__lnk:focus {
+    opacity: 0.8;
+  }
+
+
 
   .social__lnk--twiter {
     background-image: url('../img/twiter.svg');
@@ -1374,10 +1403,16 @@ padding-top: 16px;
    min-width: 140px;
  }
 
- .specification a {
+ .specification__lnk{
    padding-bottom: 2px;
    border-bottom: 1px solid white;
-   color: white;
+   color: #ffffff;
+ }
+
+ .specification__lnk:hover,
+ .specification__lnk:active {
+   border-bottom: 1px solid #ffbc9e;
+   color: #ffbc9e;
  }
 
  .specification__heart {
@@ -1394,6 +1429,10 @@ padding-top: 16px;
     background-image: url('../img/heart.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.specification__heart:hover::before{
+  background-image: url('../img/heart-hover.svg');
 }
 
 
@@ -1548,12 +1587,15 @@ padding-top: 16px;
 
   }
 
-.btn-slide:hover {
+.btn-slide:hover,
+.btn-slide:focus {
+  outline: none;
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .btn-slide:active {
+  outline: none;
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
