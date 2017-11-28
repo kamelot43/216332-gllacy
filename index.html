@@ -33,12 +33,12 @@
               <img src="img/logo.svg" width="153" height="63" alt="Глейси">
             </a>
             <ul class="navigation">
-              <li>
-                <a class="navigation__lnk" href="catalog.html">Каталог</a>
+              <li class='navigation__item navigation__item--sub'>
+                <a class="navigation__lnk " href="#">Каталог</a>
                 <ul class="sub-menu">
                   <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
                   <li><a class="sub-menu__lnk " href="catalog.html">Сливочное</a></li>
-                  <li><a  class="sub-menu__lnk sub-menu__lnk--active" href="#">Щербеты</a></li>
+                  <li><a  class="sub-menu__lnk" href="#">Щербеты</a></li>
                   <li><a class="sub-menu__lnk" href="#">Фруктовый лед</a></li>
                   <li><a class="sub-menu__lnk" href="#">Мелорин</a></li>
                 </ul>
@@ -252,7 +252,10 @@
         </div>
       </main>
     </div>
+	 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.32089461570254!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2s!4v1472509188440"
+        height="430" width="100%" style="border:0" allowfullscreen></iframe>
     <section class="contacts">
+
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <div class="content-wrapper">
         <div class="contacts__inner">
@@ -347,17 +350,17 @@
 
           <li class="popup__item">
             <label class="popup__label visually-hidden" for="popup-name">Как вас зовут ?</label>
-            <input class="popup__input " type="text" name="popup-name" id="popup-name" placeholder="Как вас зовут ?" required>
+            <input class="popup__input " type="text" name="popup-name" id="popup-name" placeholder="Как вас зовут ?" >
           </li>
 
           <li class="popup__item">
             <label class="popup__label visually-hidden " for="popup-mail">Ваша почта для ответа ?</label>
-            <input class="popup__input " type="email" name="popup-mail" id="popup-mail" placeholder="Ваша почта для ответа ?" required>
+            <input class="popup__input " type="email" name="popup-mail" id="popup-mail" placeholder="Ваша почта для ответа ?" >
           </li>
 
           <li class="popup__item">
             <label class="popup__label visually-hidden" for="popup-feedback">Напишите что-нибудь ...</label>
-            <textarea class="popup__textarea" name="popup-feedback" id='popup-feedback' placeholder="Напишите что-нибудь ..." required></textarea>
+            <textarea class="popup__textarea" name="popup-feedback" id='popup-feedback' placeholder="Напишите что-нибудь ..."></textarea>
           </li>
 
         </ul>
@@ -368,6 +371,7 @@
     </section>
     <div class="overlay"></div>
   </div>
+ <script src="js/script.js"> </script>
 
 </body>
 

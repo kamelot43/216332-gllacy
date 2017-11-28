@@ -29,8 +29,8 @@
               <img src="img/logo.svg" width="153" height="63" alt="Глейси">
             </a>
             <ul class="navigation">
-              <li>
-                <a class="navigation__lnk" href="#">Каталог</a>
+              <li class='navigation__item navigation__item--sub'>
+                <a class="navigation__lnk navigation__lnk--active" href="#">Каталог</a>
                 <ul class="sub-menu">
                   <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
                   <li><a class="sub-menu__lnk sub-menu__lnk--active" href="catalog.html">Сливочное</a></li>
@@ -85,7 +85,7 @@
               <li class="navigation__item navigation__item--basket">
                 <section class="basket">
                   <h2 class="visually-hidden">Корзина</h2>
-                  <a class="btn-custom btn-custom--basket basket__lnk " href="#">
+                  <a class="btn-custom btn-custom--basket-full basket__lnk " href="#">
                     <span class="basket__quantity">2 товара</span>
                   </a>
                   <div class="basket__content">
@@ -143,13 +143,13 @@
         <div class="breadcrumbs site-main__breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
-              <a href='index.html'>Главная</a>
+              <a class="breadcrumbs__lnk" href='index.html'>Главная</a>
             </li>
             <li class="breadcrumbs__item">
-              <a href='#'>Каталог</a>
+              <a class="breadcrumbs__lnk" href='#'>Каталог</a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__current-lnk" href='#'>Сливочное</a>
+              <a class="breadcrumbs__lnk breadcrumbs__lnk--current" href='#'>Сливочное</a>
             </li>
           </ul>
         </div>
@@ -453,6 +453,7 @@
 
     </div>
   </div>
+  <script src="js/script.js"> </script>
 
 
 </body>
