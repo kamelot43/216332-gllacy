@@ -5,16 +5,7 @@
   <meta charset="utf-8">
   <title>Gllacy каталог</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <!--<style>
-  HTML {
-    background: url( 'img/cart.png' ) 50% 0 no-repeat;
-    opacity: .5;
-  }
-  BODY {
-    opacity: .5;
-  }
-</style>-->
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +25,7 @@
                 <ul class="sub-menu">
                   <li><a class="sub-menu__lnk sub-menu__lnk--highlight" href="#">Новинки</a></li>
                   <li><a class="sub-menu__lnk sub-menu__lnk--active" href="catalog.html">Сливочное</a></li>
-                  <li><a  class="sub-menu__lnk" href="#">Щербеты</a></li>
+                  <li><a class="sub-menu__lnk" href="#">Щербеты</a></li>
                   <li><a class="sub-menu__lnk" href="#">Фруктовый лед</a></li>
                   <li><a class="sub-menu__lnk" href="#">Мелорин</a></li>
                 </ul>
@@ -47,11 +38,11 @@
                 <a href="#" class="btn-custom btn-custom--search">Поиск</a>
 
                 <div class="search">
-                <form class="search__form " action="https://echo.htmlacademy.ru" method="post">
-                  <label class="search__label visually-hidden" for="search">Форма поиска</label>
-                  <input class="search__input" type="search" id="search" placeholder="Что ищем ?">
-                </form>
-              </div>
+                  <form class="search__form " action="https://echo.htmlacademy.ru" method="post">
+                    <label class="search__label visually-hidden" for="search">Форма поиска</label>
+                    <input class="search__input" type="search" id="search" placeholder="Что ищем ?">
+                  </form>
+                </div>
               </li>
 
               <li class="navigation__item navigation__item--enter">
@@ -162,93 +153,93 @@
             <fieldset class="filter__fieldset filter__fieldset--sort">
               <legend class="filter__legend">Сортировка :</legend>
               <div class="filter__wrapper filter__wrapper--empty">
-              <select class="filter__select">
+                <select class="filter__select">
                  <option value="popular">по популярности</option>
                   <option value="cheap">сначала недорогие</option>
                   <option value="expensive">сначала дорогие</option>
                   <option value="fatness">по жирности</option>
                </select>
-               <div class="filter__arrow"></div>
-             </div>
+                <div class="filter__arrow"></div>
+              </div>
             </fieldset>
 
             <fieldset class="filter__fieldset filter__fieldset--price">
               <legend class="filter__legend">Цена: 100 руб. - 500 руб.</legend>
-                <div class="filter__wrapper">
-              <section class="range-filter">
-                <h2 class="visually-hidden">Фильтр по цене</h2>
-                <div class="range-filter__scale">
-                  <div class="range-filter__bar"></div>
-                </div>
-                <div class="range-filter__toggle range-filter__toggle--min">min</div>
-                <div class="range-filter__toggle range-filter__toggle--max">max</div>
-              </section>
-            </div>
+              <div class="filter__wrapper">
+                <section class="range-filter">
+                  <h2 class="visually-hidden">Фильтр по цене</h2>
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar"></div>
+                  </div>
+                  <div class="range-filter__toggle range-filter__toggle--min">min</div>
+                  <div class="range-filter__toggle range-filter__toggle--max">max</div>
+                </section>
+              </div>
             </fieldset>
 
             <fieldset class="filter__fieldset filter__fieldset--fatness">
               <legend class="filter__legend">Жирность :</legend>
-                <div class="filter__wrapper">
+              <div class="filter__wrapper">
 
-              <ul class="filter__list">
-                <li class="filter__item filter__item--radio">
-                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-1'>
-                  <label class="filter__label filter__label--radio" for="fatness-1">0%</label>
-                </li>
+                <ul class="filter__list">
+                  <li class="filter__item filter__item--radio">
+                    <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-1'>
+                    <label class="filter__label filter__label--radio" for="fatness-1">0%</label>
+                  </li>
 
-                <li class="filter__item filter__item--radio">
-                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-2' checked>
-                  <label class="filter__label filter__label--radio" for="fatness-2">до 10%</label>
-                </li>
+                  <li class="filter__item filter__item--radio">
+                    <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-2' checked>
+                    <label class="filter__label filter__label--radio" for="fatness-2">до 10%</label>
+                  </li>
 
-                <li class="filter__item filter__item--radio">
-                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-3'>
-                  <label class="filter__label filter__label--radio" for="fatness-3">до 30%</label>
-                </li>
+                  <li class="filter__item filter__item--radio">
+                    <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-3'>
+                    <label class="filter__label filter__label--radio" for="fatness-3">до 30%</label>
+                  </li>
 
 
-                <li class="filter__item filter__item--radio">
-                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-5'>
-                  <label class="filter__label filter__label--radio" for="fatness-5">выше 30%</label>
-                </li>
+                  <li class="filter__item filter__item--radio">
+                    <input class="filter__input filter__input--radio visually-hidden" type="radio" name="fatness" id='fatness-5'>
+                    <label class="filter__label filter__label--radio" for="fatness-5">выше 30%</label>
+                  </li>
 
-              </ul>
-            </div>
+                </ul>
+              </div>
 
             </fieldset>
 
             <fieldset class="filter__fieldset filter__fieldset--filling">
               <legend class="filter__legend">Наполнители :</legend>
-                <div class="filter__wrapper">
-              <ul class="filter__list">
+              <div class="filter__wrapper">
+                <ul class="filter__list">
 
-                <li class="filter__item filter__item--checkbox">
-                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-1'>
-                  <label class="filter__label filter__label--checkbox" for="filling-1">шоколадные</label>
-                </li>
+                  <li class="filter__item filter__item--checkbox">
+                    <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-1'>
+                    <label class="filter__label filter__label--checkbox" for="filling-1">шоколадные</label>
+                  </li>
 
-                <li class="filter__item filter__item--checkbox">
-                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-2'>
-                  <label class="filter__label filter__label--checkbox" for="filling-2">сахарные присыпки</label>
-                </li>
+                  <li class="filter__item filter__item--checkbox">
+                    <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-2'>
+                    <label class="filter__label filter__label--checkbox" for="filling-2">сахарные присыпки</label>
+                  </li>
 
-                <li class="filter__item filter__item--checkbox">
-                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-3'>
-                  <label class="filter__label filter__label--checkbox" for="filling-3">фрукты</label>
-                </li>
+                  <li class="filter__item filter__item--checkbox">
+                    <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-3'>
+                    <label class="filter__label filter__label--checkbox" for="filling-3">фрукты</label>
+                  </li>
 
-                <li class="filter__item filter__item--checkbox">
-                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-4'>
-                  <label class="filter__label filter__label--checkbox" for="filling-4">сиропы</label>
-                </li>
+                  <li class="filter__item filter__item--checkbox">
+                    <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-4'>
+                    <label class="filter__label filter__label--checkbox" for="filling-4">сиропы</label>
+                  </li>
 
-                <li class="filter__item filter__item--checkbox">
-                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-5'>
-                  <label class="filter__label filter__label--checkbox" for="filling-5">джемы</label>
-                </li>
+                  <li class="filter__item filter__item--checkbox">
+                    <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="filling" id='filling-5'>
+                    <label class="filter__label filter__label--checkbox" for="filling-5">джемы</label>
+                  </li>
 
-              </ul>
-            </div>
+                </ul>
+              </div>
             </fieldset>
 
             <button class="btn-filter filter__btn" type="submit">Применить</button>
@@ -274,7 +265,7 @@
             <img src="img/product_2.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">380 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочно-кофейное с кусочками шоколада</p>
-          <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -298,7 +289,7 @@
             <img src="img/product_5.jpg" width="267" height="267" alt="Пломбир">
             <p class="ice-cream__price">325 &#8381; <span>/кг</span> </p>
             <p class="ice-cream__descr">Сливочное с брисничным джемом</p>
-              <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
+            <a class="btn-slide btn-slide--disable ice-cream__btn" href="#">Быстрый просмотр</a>
           </article>
 
           <article class="ice-cream goods__item">
@@ -363,7 +354,7 @@
         <section class="pagination site-main__pagination">
           <h2 class="visually-hidden">Переход на следущую страницу каталога</h2>
 
-          <a  href="#" class="pagination__toggle  pagination__toggle--prev"></a>
+          <a href="#" class="pagination__toggle  pagination__toggle--prev"></a>
           <a href="#" class="pagination__toggle  pagination__toggle--next"></a>
 
           <ul class="pagination__list">
@@ -419,30 +410,30 @@
 
         <div class="site-footer__specification specification">
           <table class="specification__table">
-              <tbody>
-                <tr>
-                  <td>
-                    <a class="specification__lnk specification__heart" href="#">Для поставщиков</a>
-                  </td>
-                  <td>
-                    <a class="specification__lnk" href="#">Наши документы</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a class="specification__lnk" href="#">О производстве</a>
-                  </td>
-                  <td>
-                    <a class="specification__lnk" href="#">Экологические стандарты</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <tbody>
+              <tr>
+                <td>
+                  <a class="specification__lnk specification__heart" href="#">Для поставщиков</a>
+                </td>
+                <td>
+                  <a class="specification__lnk" href="#">Наши документы</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="specification__lnk" href="#">О производстве</a>
+                </td>
+                <td>
+                  <a class="specification__lnk" href="#">Экологические стандарты</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div class="site-footer__copyright">
 
-          <a class="site-footer__logo">
+          <a class="site-footer__logo" href="https://htmlacademy.ru/">
             <img src="img/html-academy.svg" width='130' height='40' alt='htmlacademy-logo'>
           </a>
 
@@ -453,7 +444,9 @@
 
     </div>
   </div>
-  <script src="js/script.js"> </script>
+  <script src="js/script.min.js">
+
+  </script>
 
 
 </body>
