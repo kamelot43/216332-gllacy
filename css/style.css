@@ -164,9 +164,9 @@ a {
 
 .navigation__lnk--active,
 .navigation__lnk--active:hover {
-  background-color: #d07058 !important;
+  background-color: #d07058 ;
   border-radius: 15px;
-  color: #ffffff !important;
+  color: #ffffff ;
 }
 
 .navigation {
@@ -311,7 +311,7 @@ a {
   display: block;
 }
 
-.navigation > li:hover .basket__content {
+.navigation > li:hover .basket__content--full {
   display: block;
 }
 
@@ -483,7 +483,7 @@ a {
 }
 
 .basket__content--empty {
-  display: none !important;
+  display: none;
 }
 
 .basket__goods-title {
@@ -1000,7 +1000,7 @@ a {
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1009,9 +1009,16 @@ a {
   margin-bottom: 45px;
 }
 
+
 .goods__item {
   margin-bottom: 35px;
+  margin-right: 22px;
 }
+
+.goods__item:nth-child(4n+5) {
+  margin-right: 0;
+}
+
 
 
 .ice-cream {
@@ -1347,6 +1354,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1200px;
+  margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1357,12 +1366,11 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 430px;
+  height: 430px;
   background-image: url("../img/map.jpg");
+  background-color: #dfe2c5;
   background-repeat: no-repeat;
   background-position: 50% 0;
-
-  margin-top: -435px;
 }
 
 .contacts__inner {
@@ -1378,6 +1386,7 @@ a {
   font-weight: 400;
   background-color: #ffffff;
   color: #323232;
+  border-radius: 15px;
 }
 
 .contacts__descr {
@@ -1386,10 +1395,18 @@ a {
   padding: 0;
 }
 
-.contacts__descr:nth-child(3) {
+.contacts__descr:nth-child(1) {
   width: 180px;
+}
+
+.contacts__descr:nth-child(3) {
+  width: 170px;
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
+}
+
+.contacts__descr:nth-child(4) {
+  margin-bottom: 20px;
 }
 
 .contacts__descr span {
@@ -1413,7 +1430,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 105px;
+  height: 105px;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
